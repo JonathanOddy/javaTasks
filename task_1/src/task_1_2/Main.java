@@ -1,6 +1,6 @@
-package task_2_1;
+package task_1_2;
 
-public class Test {
+public class Main {
 
     public static void main(String[] args) {
 
