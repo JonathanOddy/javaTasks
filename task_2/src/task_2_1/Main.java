@@ -5,6 +5,11 @@ import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
 
+/**
+ * Имеется список парка машин Car(String model, String type). Необходимо разбить его
+ * на списки, сгруппированные по type. Пример исходного списка: Лада седан, Лада хэтчбек,
+ * Мерседес седан, Бмв кроссовер,  Форд хэтчбек, Пежо кроссовер, Тойота седан и т.п.
+ */
 public class Main {
 
     public static void main(String[] args) {
