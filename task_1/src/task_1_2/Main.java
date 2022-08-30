@@ -1,5 +1,6 @@
 package task_1_2;
 
+/** Реализовать иерархию объектов Circle, Rect, Triangle, Square **/
 public class Main {
 
     public static void main(String[] args) {

@@ -2,6 +2,7 @@ package task_1_1;
 
 import java.util.Arrays;
 
+/** Написать сортировку пузырьком или бинарный поиск элемента в массиве */
 public class Main {
 
     public static void main(String[] args) {
