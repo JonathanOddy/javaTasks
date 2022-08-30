@@ -2,7 +2,7 @@ package task_2_2;
 
 import java.util.List;
 
-public class Test {
+public class Main {
 
     public static void main(String[] args) {
 
