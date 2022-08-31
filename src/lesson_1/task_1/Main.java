@@ -1,4 +1,4 @@
-package task_1.task_1_1;
+package lesson_1.task_1;
 
 import java.util.Arrays;
 

@@ -1,4 +1,4 @@
-package task_1.task_1_2;
+package lesson_1.task_2;
 
 /** Реализовать иерархию объектов Circle, Rect, Triangle, Square **/
 public class Main {
