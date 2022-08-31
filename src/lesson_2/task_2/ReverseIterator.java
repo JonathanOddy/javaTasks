@@ -1,4 +1,4 @@
-package task_2.task_2_2;
+package lesson_2.task_2;
 
 import java.util.Iterator;
 import java.util.List;

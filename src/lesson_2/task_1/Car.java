@@ -1,4 +1,4 @@
-package task_2.task_2_1;
+package lesson_2.task_1;
 
 public class Car implements Comparable<Car> {
 
