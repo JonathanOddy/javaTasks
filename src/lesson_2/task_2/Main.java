@@ -20,7 +20,7 @@ public class Main {
 
     public static void main(String[] args) {
 
-        String fileName = System.getProperty("user.dir") + "/src/resources/collections.txt";
+        String fileName = System.getProperty("user.dir") + "/src/lesson_2/resources/collections.txt";
 
         System.out.println("Задание 1: Подсчитать количество различных слов в файле");
         System.out.println(MyFileReader.countDistinctWords(fileName));
