@@ -1,10 +1,10 @@
-package task_4.task_4_1.terminal;
+package lesson_4.task_4_1.terminal;
 
-import task_4.task_4_1.exceptions.AccountIsLockedException;
-import task_4.task_4_1.exceptions.NegativeMoneyException;
-import task_4.task_4_1.exceptions.NotEnoughMoneyException;
-import task_4.task_4_1.pinValidator.PinValidator;
-import task_4.task_4_1.terminalServer.TerminalServer;
+import lesson_4.task_4_1.exceptions.AccountIsLockedException;
+import lesson_4.task_4_1.exceptions.NegativeMoneyException;
+import lesson_4.task_4_1.exceptions.NotEnoughMoneyException;
+import lesson_4.task_4_1.pinValidator.PinValidator;
+import lesson_4.task_4_1.terminalServer.TerminalServer;
 
 public class TerminalImpl implements Terminal {
 

@@ -1,9 +1,9 @@
-package task_4.task_4_1.terminal;
+package lesson_4.task_4_1.terminal;
 
 
-import task_4.task_4_1.exceptions.AccountIsLockedException;
-import task_4.task_4_1.exceptions.NegativeMoneyException;
-import task_4.task_4_1.exceptions.NotEnoughMoneyException;
+import lesson_4.task_4_1.exceptions.AccountIsLockedException;
+import lesson_4.task_4_1.exceptions.NegativeMoneyException;
+import lesson_4.task_4_1.exceptions.NotEnoughMoneyException;
 
 public interface Terminal {
 

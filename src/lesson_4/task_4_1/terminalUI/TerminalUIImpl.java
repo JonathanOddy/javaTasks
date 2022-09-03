@@ -1,11 +1,11 @@
-package task_4.task_4_1.terminalUI;
+package lesson_4.task_4_1.terminalUI;
 
 
 
-import task_4.task_4_1.exceptions.AccountIsLockedException;
-import task_4.task_4_1.exceptions.NegativeMoneyException;
-import task_4.task_4_1.exceptions.NotEnoughMoneyException;
-import task_4.task_4_1.terminal.Terminal;
+import lesson_4.task_4_1.exceptions.AccountIsLockedException;
+import lesson_4.task_4_1.exceptions.NegativeMoneyException;
+import lesson_4.task_4_1.exceptions.NotEnoughMoneyException;
+import lesson_4.task_4_1.terminal.Terminal;
 
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;

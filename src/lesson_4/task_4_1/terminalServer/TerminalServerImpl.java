@@ -1,10 +1,10 @@
-package task_4.task_4_1.terminalServer;
+package lesson_4.task_4_1.terminalServer;
 
-import task_4.task_4_1.dataStorage.Account;
-import task_4.task_4_1.dataStorage.AccountStorage;
-import task_4.task_4_1.exceptions.AccountIsLockedException;
-import task_4.task_4_1.exceptions.NegativeMoneyException;
-import task_4.task_4_1.exceptions.NotEnoughMoneyException;
+import lesson_4.task_4_1.dataStorage.Account;
+import lesson_4.task_4_1.dataStorage.AccountStorage;
+import lesson_4.task_4_1.exceptions.AccountIsLockedException;
+import lesson_4.task_4_1.exceptions.NegativeMoneyException;
+import lesson_4.task_4_1.exceptions.NotEnoughMoneyException;
 
 
 import java.time.Duration;

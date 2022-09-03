@@ -1,4 +1,4 @@
-package task_4.task_4_1.pinValidator;
+package lesson_4.task_4_1.pinValidator;
 
 public class PinValidator {
 

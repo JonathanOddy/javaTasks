@@ -1,4 +1,4 @@
-package task_4.example;
+package lesson_4.example;
 
 import java.net.*;
 import java.io.*;
