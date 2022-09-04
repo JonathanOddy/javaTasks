@@ -1,10 +1,10 @@
-package task_3.task_3_2;
+package lesson_3.task_3_2;
 
 
 import java.util.Comparator;
 import java.util.List;
 
-public class Test {
+public class Main {
 
     public static void main(String[] args) {
 
