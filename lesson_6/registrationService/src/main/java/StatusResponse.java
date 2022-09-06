@@ -1,0 +1,4 @@
+public enum StatusResponse {
+
+    ACCOUNT_IS_CREATED, ACCOUNT_WITH_THIS_EMAIL_IS_EXISTING
+}
