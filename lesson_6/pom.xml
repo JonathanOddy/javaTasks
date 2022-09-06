@@ -15,6 +15,7 @@
         <module>registrationService</module>
         <module>repository</module>
         <module>viewPhotoService</module>
+        <module>task2</module>
     </modules>
 
     <properties>
