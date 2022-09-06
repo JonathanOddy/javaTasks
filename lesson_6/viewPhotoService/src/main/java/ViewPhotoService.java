@@ -11,7 +11,7 @@ public class ViewPhotoService {
 
     private final AccountRepository accountRepository;
 
-    public Photo viewPhoto(String mail, int id)  {
+    private Photo viewPhoto(String mail, int id)  {
 
         if (accountRepository.ifPhotoExist(mail,id)) {
             Photo photo = accountRepository.getPhoto(mail,id);
