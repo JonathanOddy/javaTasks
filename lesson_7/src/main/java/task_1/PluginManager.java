@@ -25,8 +25,11 @@ public class PluginManager {
             Class<?> clazz = urlClassLoader.loadClass(pluginClassName);
             return (Plugin) clazz.getConstructor().newInstance();
         } catch (InstantiationException | IllegalAccessException | InvocationTargetException |
-                NoSuchMethodException | ClassNotFoundException | MalformedURLException e) {
+                NoSuchMethodException | MalformedURLException e) {
             e.printStackTrace();
+            return null;
+        } catch (ClassNotFoundException e) {
+            System.err.println(pluginClassName + ".class is not found in " + pluginFolder);
             return null;
         }
     }

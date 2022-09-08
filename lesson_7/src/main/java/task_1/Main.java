@@ -13,10 +13,15 @@ public class Main {
 
         PluginManager pluginManager = new PluginManager();
         String[] pluginFolders = new String[] {"superPlugins", "coolPlugins"};
+        String[] pluginClassNames = new String[] {"JumpToLinePlugin", "MavenHelper", "RainbowBrackets", "WakaTime"};
 
-        for (String pluginFolder : pluginFolders) {
-            Plugin jumpToLinePlugin = pluginManager.load(pluginFolder, "JumpToLinePlugin");
-            jumpToLinePlugin.doUsefull();
+        for (String pluginClassName : pluginClassNames) {
+            System.out.println(pluginClassName);
+            for (String pluginFolder : pluginFolders) {
+                Plugin jumpToLinePlugin = pluginManager.load(pluginFolder, pluginClassName);
+                if (jumpToLinePlugin != null) jumpToLinePlugin.doUsefull();
+            }
         }
     }
 }
+
