@@ -9,11 +9,11 @@ import java.net.MalformedURLException;
 */
 public class Main {
 
-    public static void main(String[] args) throws MalformedURLException, ClassNotFoundException {
+    public static void main(String[] args) {
 
         PluginManager pluginManager = new PluginManager();
-        String[] pluginFolders = new String[] {"superPlugins", "coolPlugins"};
-        String[] pluginClassNames = new String[] {"JumpToLinePlugin", "MavenHelper", "RainbowBrackets", "WakaTime"};
+        String[] pluginFolders = {"superPlugins", "coolPlugins"};
+        String[] pluginClassNames = {"JumpToLinePlugin", "MavenHelper", "RainbowBrackets", "WakaTime"};
 
         for (String pluginClassName : pluginClassNames) {
             System.out.println(pluginClassName);
