@@ -1,10 +1,9 @@
 package proxy;
 
 import annotations.Cache;
-import annotations.CacheType;
 import serializationService.Result;
 import serializationService.SerializationUtil;
-import service.Service;
+import service.*;
 import service.ServiceImpl;
 import zipUtil.ZipUtil;
 
@@ -13,13 +12,9 @@ import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 import java.lang.reflect.Proxy;
-import java.nio.file.Files;
-import java.nio.file.StandardCopyOption;
 import java.time.LocalDateTime;
-import java.time.LocalTime;
 import java.time.format.DateTimeFormatter;
 import java.util.*;
-import java.util.zip.*;
 
 public class CacheProxy implements InvocationHandler {
 
@@ -30,6 +25,8 @@ public class CacheProxy implements InvocationHandler {
     private final Map<List<Object>, Object> cacheInMemory = new HashMap();
     private final Map<List<Object>, Object> cacheInFile = new HashMap();
     private Cache annotation;
+    File temporaryCacheFile;
+
 
     public CacheProxy(Object delegate) throws IOException, ClassNotFoundException {
         this.delegate = delegate;
@@ -47,22 +44,40 @@ public class CacheProxy implements InvocationHandler {
 
     private Object cacheInvoke(Method method, Object[] args) throws IOException, ClassNotFoundException {
 
-
         File cacheFile = getFile(method, formatOfCacheFile);
         loadCacheFromFileHandler(cacheFile);
 
         File zipFile = getFile(method, zipFormatOfCacheFile);
         loadCacheFromFileHandler(zipFile);
 
-        List<Object> keys = Arrays.asList(method.getName(), List.of(args));
+        if (temporaryCacheFile != null) {
+            cacheFile = temporaryCacheFile;
+        }
+
+        List<Object> keys = getKeys(method, args);
         if (resultInCache(keys) != null) {
             System.out.println(localTime() + "Результат метода " + keys + " взят из кэша");
+            temporaryCacheFile.delete();    // самая гениальная строчка в коде
             return resultInCache(keys);
         } else {
-            Result result = new Result(method, args, invoke(method, args));
+            Result result = new Result(keys, invoke(method, args));
             loadResultInCache(method, result, cacheFile);
             return result.getResult();
         }
+    }
+
+    private List<Object> getKeys(Method method, Object[] args) {
+
+        List<Object> keys = new ArrayList<>();
+        keys.add(method.getName());
+        for (Object arg: args) {
+            for (Class clazz: annotation.identityBy()) {
+                if (clazz.isInstance(arg)) {
+                    keys.add(arg);
+                }
+            }
+        }
+        return keys;
     }
 
     private File getFile(Method method, String formatOfFile) throws IOException, ClassNotFoundException {
@@ -75,12 +90,11 @@ public class CacheProxy implements InvocationHandler {
     private void loadCacheFromFileHandler(File file) throws IOException, ClassNotFoundException {
         if (annotation.zip()) {
             if (file.exists()) {
-                File temporaryCacheFile = new File (file.getAbsolutePath().substring(0,file.getAbsolutePath().lastIndexOf("."))
+                temporaryCacheFile = new File (file.getAbsolutePath().substring(0,file.getAbsolutePath().lastIndexOf("."))
                        + "Temporary" + formatOfCacheFile);
                 temporaryCacheFile.createNewFile();
                 ZipUtil.unZip(file, temporaryCacheFile);
                 loadCacheFromFile(temporaryCacheFile);
-                temporaryCacheFile.delete();
             }
         } else {
             loadCacheFromFile(file);
@@ -104,19 +118,25 @@ public class CacheProxy implements InvocationHandler {
     }
 
     private void loadResultInCache(Method method, Result result, File cacheFile) throws IOException, ClassNotFoundException {
+
         switch (annotation.cacheType()) {
             case IN_MEMORY: {
-                cacheInMemory.put(result.getKeys(), result.getResult());
-                System.out.println(localTime() + "Результат метода " + result.getKeys() + " записан в оперативную память");
+                if (cacheInMemory.size() < annotation.memoryCacheSize()) {
+                    cacheInMemory.put(result.getKeys(), result.getResult());
+                    System.out.println(localTime() + "Результат метода " + result.getKeys() + " записан в оперативную память");
+                } else {
+                    System.out.println(localTime() + "Кэш в оперативной памяти переполнен");
+                }
                 break;
             }
             case FILE: {
                 cacheInFile.put(result.getKeys(), result.getResult());
                 loadResultInCache(cacheFile, result);
-                System.out.println(localTime() + "Результат метода " + result.getKeys() + " записан в файл " + method.getName());
+                System.out.println(localTime() + "Результат метода " + result.getKeys() + " записан в файл " + getFileName(method));
                 if (annotation.zip()) {
                     zipCacheFIle(method, cacheFile);
                     cacheFile.delete();
+
                 }
                 break;
             }
@@ -124,8 +144,8 @@ public class CacheProxy implements InvocationHandler {
     }
 
     private void zipCacheFIle(Method method, File cacheFile) throws IOException {
-        System.out.println(localTime() + "Файл " + method.getName() + " заархивирован");
-        File zipOfCacheFile = new File(cacheFileRoot + method.getName() + zipFormatOfCacheFile);
+        System.out.println(localTime() + "Файл " + getFileName(method) + " заархивирован");
+        File zipOfCacheFile = new File(cacheFileRoot + getFileName(method) + zipFormatOfCacheFile);
         ZipUtil.zip(cacheFile, zipOfCacheFile);
     }
 
@@ -160,37 +180,8 @@ public class CacheProxy implements InvocationHandler {
         }
     }
 
-    public static void main(String[] args) throws IOException, ClassNotFoundException {
-
-        Service service = new ServiceImpl();
-
-        Service serviceProxy = (Service) Proxy.newProxyInstance(
-                ClassLoader.getSystemClassLoader(), service.getClass().getInterfaces(), new CacheProxy(service)
-        );
-
-        serviceProxy.work("log").forEach(System.out::println);
-        serviceProxy.work("log").forEach(System.out::println);
-//        serviceProxy.work("book").forEach(System.out::println);
-//        serviceProxy.work("comic").forEach(System.out::println);
-//        serviceProxy.work("coins").forEach(System.out::println);
-//        serviceProxy.work("tickets").forEach(System.out::println);
-
-//        List<Result> deserialize = SerializationUtil.deserialize(new File
-//                ("/Users/mac/Documents/Git/javaTasks/lesson_8/src/main/resources/work.ser"));
-//        deserialize.forEach(System.out::println);
-
-
-//        File file = new File( "/Users/mac/Documents/Git/javaTasks/lesson_8/src/main/resources/work.ser");
-        File zipFile = new File("/Users/mac/Documents/Git/javaTasks/lesson_8/src/main/resources/work.zip");
-        File newFile = new File("/Users/mac/Documents/Git/javaTasks/lesson_8/src/main/resources/newWork.ser");
-//
-//
-//        ZipUtil.zip(file, zipFile);
-//        ZipUtil.unZip(zipFile, newFile);
-//
-//        List<Result> deserialize = SerializationUtil.deserialize(newFile);
-//        deserialize.forEach(System.out::println);
-
+    private void closeResources() {
+        temporaryCacheFile.delete();
     }
 }
 

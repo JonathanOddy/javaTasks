@@ -11,9 +11,9 @@ public class Result implements Serializable {
     private final List<Object> keys;
     private final Object result;
 
-    public <T> Result(Method method, Object[] args, Object invokeResult) {
-        keys = Arrays.asList(method.getName(), List.of(args));
-        result = invokeResult;
+    public Result(List<Object> keys, Object invokeResult) {
+        this.keys = keys;
+        this.result = invokeResult;
     }
 
     public List<Object> getKeys() {

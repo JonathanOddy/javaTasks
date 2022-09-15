@@ -1,13 +1,14 @@
 package service;
 
 import java.time.Duration;
+import java.time.LocalDate;
 import java.time.LocalTime;
 import java.util.*;
 
 public class ServiceImpl implements Service {
 
     @Override
-    public List<String> run(String item, double value, Date date) {
+    public List<String> run(String item, Double value, LocalDate date) {
         try {
             Thread.sleep(400L);
         } catch (InterruptedException e) {
@@ -20,7 +21,7 @@ public class ServiceImpl implements Service {
     public List<String> work(String item) {
         LocalTime timeBeforeCalculation  = LocalTime.now();
         try {
-            Thread.sleep(20L * item.length());
+            Thread.sleep(200L * item.length());
         } catch (InterruptedException e) {
             e.printStackTrace();
         }

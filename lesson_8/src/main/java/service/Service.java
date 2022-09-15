@@ -2,7 +2,7 @@ package service;
 
 import annotations.Cache;
 
-import java.util.Date;
+import java.time.LocalDate;
 import java.util.List;
 
 import static annotations.CacheType.FILE;
@@ -10,10 +10,10 @@ import static annotations.CacheType.IN_MEMORY;
 
 public interface Service {
 
-    @Cache(cacheType = FILE, fileNamePrefix = "data", zip = true, identityBy = {String.class, double.class})
-    List<String> run(String item, double value, Date date);
+    @Cache(cacheType = FILE, fileNamePrefix = "data", zip = true, identityBy = {String.class, Double.class})
+    List<String> run(String item, Double value, LocalDate date);
 
-    @Cache(cacheType = FILE, listSize = 100_000, zip = true)
+    @Cache(cacheType = FILE, zip = true, memoryCacheSize = 100_000, identityBy = {String.class})
     List<String> work(String item);
 
 }
