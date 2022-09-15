@@ -20,7 +20,7 @@ public class ServiceImpl implements Service {
     public List<String> work(String item) {
         LocalTime timeBeforeCalculation  = LocalTime.now();
         try {
-            Thread.sleep(200L * item.length());
+            Thread.sleep(20L * item.length());
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
@@ -28,4 +28,5 @@ public class ServiceImpl implements Service {
         return new ArrayList<>(Arrays.asList(item, "was made for " +
                 Duration.between(timeBeforeCalculation, timeAfterCalculation).toMillis() + "ms"));
     }
+
 }

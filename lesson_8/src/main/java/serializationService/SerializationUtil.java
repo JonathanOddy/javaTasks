@@ -3,8 +3,6 @@ package serializationService;
 import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.zip.ZipEntry;
-import java.util.zip.ZipOutputStream;
 
 public class SerializationUtil {
 
@@ -19,7 +17,6 @@ public class SerializationUtil {
             oos.writeObject(result);
         }
     }
-
 
     public static <T> List<T> deserialize(File file) throws IOException, ClassNotFoundException {
         List<T> listOfResults = new ArrayList<>();
