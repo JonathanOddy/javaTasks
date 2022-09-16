@@ -1,4 +1,4 @@
-package serializationService;
+package serializationUtil;
 
 import java.io.*;
 import java.util.ArrayList;
@@ -32,6 +32,4 @@ public class SerializationUtil {
         }
         return listOfResults;
     }
-
-
 }

@@ -29,5 +29,4 @@ public class ServiceImpl implements Service {
         return new ArrayList<>(Arrays.asList(item, "was made for " +
                 Duration.between(timeBeforeCalculation, timeAfterCalculation).toMillis() + "ms"));
     }
-
 }

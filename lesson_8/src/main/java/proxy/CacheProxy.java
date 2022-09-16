@@ -1,20 +1,21 @@
 package proxy;
 
 import annotations.Cache;
-import serializationService.Result;
-import serializationService.SerializationUtil;
-import service.*;
-import service.ServiceImpl;
+import serializationUtil.Result;
+import serializationUtil.SerializationUtil;
 import zipUtil.ZipUtil;
 
-import java.io.*;
+import java.io.File;
+import java.io.IOException;
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
-import java.lang.reflect.Proxy;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
 public class CacheProxy implements InvocationHandler {
 
@@ -28,12 +29,12 @@ public class CacheProxy implements InvocationHandler {
     File temporaryCacheFile;
 
 
-    public CacheProxy(Object delegate) throws IOException, ClassNotFoundException {
+    public CacheProxy(Object delegate) {
         this.delegate = delegate;
     }
 
     @Override
-    public Object invoke(Object proxy, Method method, Object[] args) throws IOException, ClassNotFoundException {
+    public Object invoke(Object proxy, Method method, Object[] args) {
         if(!method.isAnnotationPresent(Cache.class)) {
             return invoke(method, args);
         } else {
@@ -42,7 +43,7 @@ public class CacheProxy implements InvocationHandler {
         }
     }
 
-    private Object cacheInvoke(Method method, Object[] args) throws IOException, ClassNotFoundException {
+    private Object cacheInvoke(Method method, Object[] args) {
 
         File cacheFile = getFile(method, formatOfCacheFile);
         loadCacheFromFileHandler(cacheFile);
@@ -80,34 +81,32 @@ public class CacheProxy implements InvocationHandler {
         return keys;
     }
 
-    private File getFile(Method method, String formatOfFile) throws IOException, ClassNotFoundException {
+    private File getFile(Method method, String formatOfFile) {
         String filename = getFileName(method);
         File file = new File(cacheFileRoot + filename + formatOfFile);
         return file;
     }
 
 
-    private void loadCacheFromFileHandler(File file) throws IOException, ClassNotFoundException {
+    private void loadCacheFromFileHandler(File file) {
         if (annotation.zip()) {
             if (file.exists()) {
-                temporaryCacheFile = new File (file.getAbsolutePath().substring(0,file.getAbsolutePath().lastIndexOf("."))
-                       + "Temporary" + formatOfCacheFile);
-                temporaryCacheFile.createNewFile();
-                ZipUtil.unZip(file, temporaryCacheFile);
-                loadCacheFromFile(temporaryCacheFile);
+                try {
+                    temporaryCacheFile = new File (file.getAbsolutePath().substring(0,file.getAbsolutePath().lastIndexOf("."))
+                            + "Temporary" + formatOfCacheFile);
+                    temporaryCacheFile.createNewFile();
+                    ZipUtil.unZip(file, temporaryCacheFile);
+                    loadCacheFromFile(temporaryCacheFile);
+                } catch (IOException e) {
+                    throw new RuntimeException("Ошибка при разархивации. Очистите кэш директорию:\n" +
+                            cacheFileRoot);
+                }
             }
         } else {
             loadCacheFromFile(file);
         }
     }
 
-    private void loadCacheFromFile(File file) throws IOException, ClassNotFoundException {
-        if (file.exists()) {
-            List<Result> initialCacheFromFile = SerializationUtil.deserialize(file);
-            initialCacheFromFile.forEach(res -> cacheInFile.put(res.getKeys(), res.getResult()));
-        }
-
-    }
 
     private String getFileName(Method method) {
         String filename = annotation.fileNamePrefix();
@@ -117,7 +116,7 @@ public class CacheProxy implements InvocationHandler {
         return filename;
     }
 
-    private void loadResultInCache(Method method, Result result, File cacheFile) throws IOException, ClassNotFoundException {
+    private void loadResultInCache(Method method, Result result, File cacheFile)  {
 
         switch (annotation.cacheType()) {
             case IN_MEMORY: {
@@ -136,29 +135,49 @@ public class CacheProxy implements InvocationHandler {
                 if (annotation.zip()) {
                     zipCacheFIle(method, cacheFile);
                     cacheFile.delete();
-
                 }
                 break;
             }
         }
     }
 
-    private void zipCacheFIle(Method method, File cacheFile) throws IOException {
+    private void zipCacheFIle(Method method, File cacheFile) {
         System.out.println(localTime() + "Файл " + getFileName(method) + " заархивирован");
         File zipOfCacheFile = new File(cacheFileRoot + getFileName(method) + zipFormatOfCacheFile);
-        ZipUtil.zip(cacheFile, zipOfCacheFile);
+        try {
+            ZipUtil.zip(cacheFile, zipOfCacheFile);
+        } catch (IOException e) {
+            throw new RuntimeException("Ошибка при архивации. Очистите кэш директорию:\n" +
+                    cacheFileRoot);
+        }
     }
 
     private String localTime() {
         return LocalDateTime.now().format(DateTimeFormatter.ofPattern("yyyy-MM-dd, hh:mm:ss")) +"\t";
     }
 
-    private void loadResultInCache(File cacheFile, Result result) throws IOException, ClassNotFoundException {
-        if (cacheFile.exists()) {
-            List<Result> initialCacheFromFile = SerializationUtil.deserialize(cacheFile);
-            initialCacheFromFile.forEach(res -> cacheInFile.put(res.getKeys(), res.getResult()));
+    private void loadResultInCache(File cacheFile, Result result)  {
+        loadCacheFromFile(cacheFile);
+        try {
+            SerializationUtil.serialize(result, cacheFile);
+        } catch (IOException e) {
+            throw new RuntimeException("Ошибка сериализации. Создайте пустую директорию:\n" +
+                    cacheFileRoot);
         }
-        SerializationUtil.serialize(result, cacheFile);
+    }
+
+    private void loadCacheFromFile(File cacheFile) {
+        if (cacheFile.exists()) {
+            try {
+                List<Result> initialCacheFromFile  = SerializationUtil.deserialize(cacheFile);
+                initialCacheFromFile.forEach(res -> cacheInFile.put(res.getKeys(), res.getResult()));
+            } catch (IOException e) {
+                throw new RuntimeException("Ошибка десериализации. Очистите кэш директорию:\n" +
+                        cacheFileRoot);
+            } catch (ClassNotFoundException e) {
+                throw new RuntimeException("Ошибка загрузки " + Result.class + ". Используйте системный Classloader");
+            }
+        }
     }
 
     private Object resultInCache(List<Object> key) {
@@ -175,13 +194,10 @@ public class CacheProxy implements InvocationHandler {
     private Object invoke(Method method, Object[] args) {
         try {
             return method.invoke(delegate, args);
-        } catch (InvocationTargetException | IllegalAccessException e) {
+        } catch (InvocationTargetException e) {
+            throw new RuntimeException("Базовый метод " + method + " вызвал исключение");
+        } catch (IllegalAccessException e) {
             throw new RuntimeException("Impossible", e);
         }
     }
-
-    private void closeResources() {
-        temporaryCacheFile.delete();
-    }
 }
-

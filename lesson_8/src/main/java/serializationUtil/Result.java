@@ -1,7 +1,6 @@
-package serializationService;
+package serializationUtil;
 
 import java.io.Serializable;
-import java.lang.reflect.Method;
 import java.util.*;
 
 public class Result implements Serializable {

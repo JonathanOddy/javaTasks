@@ -13,7 +13,7 @@ public interface Service {
     @Cache(cacheType = FILE, fileNamePrefix = "data", zip = true, identityBy = {String.class, Double.class})
     List<String> run(String item, Double value, LocalDate date);
 
-    @Cache(cacheType = FILE, zip = true, memoryCacheSize = 100_000, identityBy = {String.class})
+    @Cache(cacheType = IN_MEMORY,  memoryCacheSize = 100_000)
     List<String> work(String item);
 
 }

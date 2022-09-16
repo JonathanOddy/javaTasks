@@ -4,10 +4,11 @@ import service.ServiceImpl;
 
 import java.io.IOException;
 import java.lang.reflect.Proxy;
+import java.time.LocalDate;
 
 public class Main {
 
-    public static void main(String[] args) throws IOException, ClassNotFoundException {
+    public static void main(String[] args) {
 
         Service service = new ServiceImpl();
 
@@ -15,24 +16,20 @@ public class Main {
                 ClassLoader.getSystemClassLoader(), service.getClass().getInterfaces(), new CacheProxy(service)
         );
 
-//        serviceProxy.work("coding");
-//        serviceProxy.work("coding");
-//        serviceProxy.work("reading");
-//        serviceProxy.work("learning");
-        serviceProxy.work("1");
-        serviceProxy.work("2");
-        serviceProxy.work("3");
-        serviceProxy.work("4");
-        serviceProxy.work("5");
-        serviceProxy.work("6");
-        serviceProxy.work("7");
+        String[] affairs = {"coding", "reading", "cooking"};
+        double[] hours = {1, 2};
 
-
-//        serviceProxy.run("cooking",1.,LocalDate.now());
-//        serviceProxy.run("cooking",2.,LocalDate.now());
-//        serviceProxy.run("cooking",1.,LocalDate.now());
-
-
+        work(serviceProxy, affairs, hours);
+        work(serviceProxy, affairs, hours);
     }
 
+    private static void work(Service serviceProxy, String[] affairs, double[] hours) {
+        for (String affair : affairs) {
+            serviceProxy.work(affair);
+            for (double hour : hours) {
+                serviceProxy.run(affair, hour, LocalDate.now());
+            }
+        }
+        System.out.println();
+    }
 }

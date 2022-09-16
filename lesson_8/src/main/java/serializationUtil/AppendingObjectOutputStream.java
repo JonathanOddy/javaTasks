@@ -1,4 +1,4 @@
-package serializationService;
+package serializationUtil;
 
 import java.io.IOException;
 import java.io.ObjectOutputStream;
