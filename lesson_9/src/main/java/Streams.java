@@ -8,6 +8,7 @@ public class Streams<T> {
 
     private boolean writePermission;
     private final Spliterator<T> spliterator;
+
     private final List<Operation> operations;
     private Predicate<? super T> predicate;
     private UnaryOperator<T> unaryOperator;
@@ -37,15 +38,14 @@ public class Streams<T> {
     public <K,V> Map<K, V> toMap(Function<? super T, ? extends K> keyFunction, Function<? super T, ? extends V> valueFunction) {
 
         Map<K, V> resultMap = new HashMap<>();
-        while (spliterator.tryAdvance(value -> consumerAction(value, resultMap, keyFunction, valueFunction)));
+        while (spliterator.tryAdvance(value -> action(value, resultMap, keyFunction, valueFunction)));
         return resultMap;
     }
 
-    private <K, V> void consumerAction(T value, Map<K,V> resultMap, Function<? super T,? extends K> keyFunction,
+    private <K, V> void action(T value, Map<K,V> resultMap, Function<? super T,? extends K> keyFunction,
                               Function<? super T,? extends V> valueFunction)  {
 
         writePermission = true;
-
         for (Operation operation: operations) {
             value = operationExecutor(value, operation);
         }
