@@ -11,7 +11,7 @@ public class FixedThreadPool implements ThreadPool {
     private final int numberOfWorkers;
     private final Set<Worker> workers = new HashSet<>();
     private final LinkedBlockingQueue<Runnable> taskQueue = new LinkedBlockingQueue<>();
-    private final AtomicInteger numberOfFreeWorkers = new AtomicInteger(0);
+    private volatile AtomicInteger numberOfFreeWorkers = new AtomicInteger(0);
     private boolean isFinished = false;
 
     public FixedThreadPool(int numberOfThreads) {
