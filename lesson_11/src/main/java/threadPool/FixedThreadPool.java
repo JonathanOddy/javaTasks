@@ -3,6 +3,7 @@ package threadPool;
 import java.util.HashSet;
 import java.util.Set;
 import java.util.concurrent.LinkedBlockingQueue;
+import java.util.concurrent.atomic.AtomicInteger;
 import java.util.stream.IntStream;
 
 public class FixedThreadPool implements ThreadPool {
@@ -10,7 +11,7 @@ public class FixedThreadPool implements ThreadPool {
     private final int numberOfWorkers;
     private final Set<Worker> workers = new HashSet<>();
     private final LinkedBlockingQueue<Runnable> taskQueue = new LinkedBlockingQueue<>();
-    private volatile int numberOfFreeWorkers;
+    private final AtomicInteger numberOfFreeWorkers = new AtomicInteger(0);
     private boolean isFinished = false;
 
     public FixedThreadPool(int numberOfThreads) {
@@ -40,9 +41,9 @@ public class FixedThreadPool implements ThreadPool {
     @Override
     public void shutDown() {
         while (!isFinished) {
-            if (numberOfWorkers == numberOfFreeWorkers) {
+            if (numberOfWorkers == numberOfFreeWorkers.get()) {
                 synchronized (taskQueue) {
-                    if ( taskQueue.isEmpty()) {
+                    if (taskQueue.isEmpty()) {
                         workers.forEach(Worker::quit);
                         isFinished = true;
                     }
@@ -74,8 +75,8 @@ public class FixedThreadPool implements ThreadPool {
         private void takeTask() throws InterruptedException {
             synchronized (taskQueue) {
                 while (taskQueue.isEmpty() && !Thread.currentThread().isInterrupted()) {
-                        ++numberOfFreeWorkers;
-                        taskQueue.wait();
+                    numberOfFreeWorkers.incrementAndGet();
+                    taskQueue.wait();
                 }
                 task = taskQueue.poll();
             }
