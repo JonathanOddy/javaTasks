@@ -1,0 +1,1260 @@
+[0.022s][debug][gc,heap] Minimum heap 8388608  Initial heap 134217728  Maximum heap 2147483648
+[0.026s][info ][gc     ] Using Parallel
+[0.026s][info ][gc,heap,coops] Heap address: 0x0000000780000000, size: 2048 MB, Compressed Oops mode: Zero based, Oop shift amount: 3
+[10.555s][debug][gc,heap      ] GC(0) Heap before GC invocations=1 (full 0): PSYoungGen      total 38400K, used 32822K [0x00000007d5580000, 0x00000007d8000000, 0x0000000800000000)
+[10.556s][debug][gc,heap      ] GC(0)   eden space 33280K, 98% used [0x00000007d5580000,0x00000007d758dbf8,0x00000007d7600000)
+[10.556s][debug][gc,heap      ] GC(0)   from space 5120K, 0% used [0x00000007d7b00000,0x00000007d7b00000,0x00000007d8000000)
+[10.556s][debug][gc,heap      ] GC(0)   to   space 5120K, 0% used [0x00000007d7600000,0x00000007d7600000,0x00000007d7b00000)
+[10.556s][debug][gc,heap      ] GC(0)  ParOldGen       total 87552K, used 0K [0x0000000780000000, 0x0000000785580000, 0x00000007d5580000)
+[10.556s][debug][gc,heap      ] GC(0)   object space 87552K, 0% used [0x0000000780000000,0x0000000780000000,0x0000000785580000)
+[10.556s][debug][gc,heap      ] GC(0)  Metaspace       used 12987K, capacity 13394K, committed 13568K, reserved 1060864K
+[10.556s][debug][gc,heap      ] GC(0)   class space    used 1344K, capacity 1500K, committed 1536K, reserved 1048576K
+[10.556s][debug][gc,tlab      ] GC(0) TLAB totals: thrds: 11  refills: 47 max: 27 slow allocs: 3 max 3 waste: 16.9% gc: 5391200B max: 681480B slow: 22488B max: 15320B fast: 0B max: 0B
+[10.556s][info ][gc,start     ] GC(0) Pause Young (Allocation Failure)
+[10.556s][debug][gc,phases,start] GC(0) Scavenge
+[10.578s][debug][gc,phases      ] GC(0) Scavenge 22.175ms
+[10.578s][debug][gc,phases,start] GC(0) Reference Processing
+[10.578s][debug][gc,ref         ] GC(0) Skipped phase1 of Reference Processing due to unavailable references
+[10.579s][debug][gc,ref         ] GC(0) Skipped phase3 of Reference Processing due to unavailable references
+[10.579s][debug][gc,phases,ref  ] GC(0) Reference Processing: 0.1ms
+[10.579s][debug][gc,phases,ref  ] GC(0)   Reconsider SoftReferences: 0.0ms
+[10.579s][debug][gc,phases,ref  ] GC(0)     SoftRef: skipped
+[10.579s][debug][gc,phases,ref  ] GC(0)   Notify Soft/WeakReferences: 0.1ms
+[10.579s][debug][gc,phases,ref  ] GC(0)     SoftRef: 0.0ms
+[10.579s][debug][gc,phases,ref  ] GC(0)     WeakRef: 0.1ms
+[10.579s][debug][gc,phases,ref  ] GC(0)     FinalRef: 0.0ms
+[10.579s][debug][gc,phases,ref  ] GC(0)     Total: 0.1ms
+[10.579s][debug][gc,phases,ref  ] GC(0)   Notify and keep alive finalizable: 0.0ms
+[10.579s][debug][gc,phases,ref  ] GC(0)     FinalRef: skipped
+[10.579s][debug][gc,phases,ref  ] GC(0)   Notify PhantomReferences: 0.0ms
+[10.579s][debug][gc,phases,ref  ] GC(0)     PhantomRef: 0.0ms
+[10.579s][debug][gc,phases,ref  ] GC(0)   SoftReference:
+[10.579s][debug][gc,phases,ref  ] GC(0)     Discovered: 0
+[10.579s][debug][gc,phases,ref  ] GC(0)     Cleared: 0
+[10.579s][debug][gc,phases,ref  ] GC(0)   WeakReference:
+[10.579s][debug][gc,phases,ref  ] GC(0)     Discovered: 1107
+[10.579s][debug][gc,phases,ref  ] GC(0)     Cleared: 887
+[10.579s][debug][gc,phases,ref  ] GC(0)   FinalReference:
+[10.579s][debug][gc,phases,ref  ] GC(0)     Discovered: 0
+[10.579s][debug][gc,phases,ref  ] GC(0)     Cleared: 0
+[10.579s][debug][gc,phases,ref  ] GC(0)   PhantomReference:
+[10.579s][debug][gc,phases,ref  ] GC(0)     Discovered: 134
+[10.579s][debug][gc,phases,ref  ] GC(0)     Cleared: 10
+[10.579s][debug][gc,phases      ] GC(0) Reference Processing 0.517ms
+[10.579s][debug][gc,phases,start] GC(0) Weak Processing
+[10.579s][debug][gc,phases      ] GC(0) Weak Processing 0.112ms
+[10.579s][debug][gc,phases,start] GC(0) Scrub String Table
+[10.579s][debug][gc,phases      ] GC(0) Scrub String Table 0.252ms
+[10.579s][debug][gc,ergo        ] GC(0) AdaptiveSizeStart:  collection: 1 
+[10.579s][debug][gc,age         ] GC(0) Desired survivor size 5242880 bytes, new threshold 7 (max threshold 15)
+[10.579s][debug][gc,ergo        ] GC(0) PSAdaptiveSizePolicy::compute_eden_space_size: costs minor_time: 0.002213 major_cost: 0.000000 mutator_cost: 0.997787 throughput_goal: 0.990000
+[10.579s][debug][gc,ergo        ] GC(0) Live_space: 273661984 free_space: 68157440
+[10.579s][debug][gc,ergo        ] GC(0) Old eden_size: 34078720 desired_eden_size: 34078720
+[10.579s][debug][gc,ergo        ] GC(0) AdaptiveSizeStop: collection: 1 
+[10.579s][info ][gc,heap        ] GC(0) PSYoungGen: 32822K->5104K(38400K)
+[10.579s][info ][gc,heap        ] GC(0) ParOldGen: 0K->2784K(87552K)
+[10.579s][info ][gc,metaspace   ] GC(0) Metaspace: 12987K->12987K(1060864K)
+[10.579s][info ][gc             ] GC(0) Pause Young (Allocation Failure) 32M->7M(123M) 23.564ms
+[10.579s][info ][gc,cpu         ] GC(0) User=0.05s Sys=0.01s Real=0.02s
+[10.580s][debug][gc,heap        ] GC(0) Heap after GC invocations=1 (full 0): PSYoungGen      total 38400K, used 5104K [0x00000007d5580000, 0x00000007d8000000, 0x0000000800000000)
+[10.580s][debug][gc,heap        ] GC(0)   eden space 33280K, 0% used [0x00000007d5580000,0x00000007d5580000,0x00000007d7600000)
+[10.580s][debug][gc,heap        ] GC(0)   from space 5120K, 99% used [0x00000007d7600000,0x00000007d7afc020,0x00000007d7b00000)
+[10.580s][debug][gc,heap        ] GC(0)   to   space 5120K, 0% used [0x00000007d7b00000,0x00000007d7b00000,0x00000007d8000000)
+[10.580s][debug][gc,heap        ] GC(0)  ParOldGen       total 87552K, used 2784K [0x0000000780000000, 0x0000000785580000, 0x00000007d5580000)
+[10.580s][debug][gc,heap        ] GC(0)   object space 87552K, 3% used [0x0000000780000000,0x00000007802b8000,0x0000000785580000)
+[10.580s][debug][gc,heap        ] GC(0)  Metaspace       used 12987K, capacity 13394K, committed 13568K, reserved 1060864K
+[10.580s][debug][gc,heap        ] GC(0)   class space    used 1344K, capacity 1500K, committed 1536K, reserved 1048576K
+[10.580s][debug][gc,task,time   ] GC(0) VM-Thread 10555403447 10578365711 10579617564
+[10.580s][debug][gc,task,time   ] GC(0) GC-Thread 0 entries: 15
+[10.580s][debug][gc,task,time   ] GC(0) 	[ noop task 10556126392 10556127259 ]
+[10.580s][debug][gc,task,time   ] GC(0) 	[ scavenge-roots-task 10556219166 10557269750 ]
+[10.580s][debug][gc,task,time   ] GC(0) 	[ thread-roots-task 10557270745 10558128834 ]
+[10.580s][debug][gc,task,time   ] GC(0) 	[ thread-roots-task 10558129441 10558131210 ]
+[10.580s][debug][gc,task,time   ] GC(0) 	[ thread-roots-task 10558131435 10558132836 ]
+[10.580s][debug][gc,task,time   ] GC(0) 	[ thread-roots-task 10558133031 10558215347 ]
+[10.580s][debug][gc,task,time   ] GC(0) 	[ thread-roots-task 10558215646 10558674530 ]
+[10.580s][debug][gc,task,time   ] GC(0) 	[ thread-roots-task 10558675678 10558676560 ]
+[10.580s][debug][gc,task,time   ] GC(0) 	[ thread-roots-task 10558676758 10558960447 ]
+[10.580s][debug][gc,task,time   ] GC(0) 	[ thread-roots-task 10558961329 10562180683 ]
+[10.580s][debug][gc,task,time   ] GC(0) 	[ thread-roots-task 10562182083 10562662519 ]
+[10.580s][debug][gc,task,time   ] GC(0) 	[ thread-roots-task 10562663799 10562787495 ]
+[10.580s][debug][gc,task,time   ] GC(0) 	[ scavenge-roots-task 10562788182 10569869833 ]
+[10.580s][debug][gc,task,time   ] GC(0) 	[ steal-task 10569871079 10578232599 ]
+[10.580s][debug][gc,task,time   ] GC(0) 	[ waitfor-barrier-task 10578233552 10578245806 ]
+[10.580s][debug][gc,task,time   ] GC(0) GC-Thread 1 entries: 15
+[10.580s][debug][gc,task,time   ] GC(0) 	[ scavenge-roots-task 10556212329 10557267776 ]
+[10.580s][debug][gc,task,time   ] GC(0) 	[ thread-roots-task 10557271392 10557377770 ]
+[10.580s][debug][gc,task,time   ] GC(0) 	[ thread-roots-task 10557378338 10557505949 ]
+[10.580s][debug][gc,task,time   ] GC(0) 	[ thread-roots-task 10557506219 10557649266 ]
+[10.580s][debug][gc,task,time   ] GC(0) 	[ thread-roots-task 10557649739 10557652586 ]
+[10.580s][debug][gc,task,time   ] GC(0) 	[ thread-roots-task 10557652812 10562674935 ]
+[10.580s][debug][gc,task,time   ] GC(0) 	[ thread-roots-task 10562676264 10562765304 ]
+[10.580s][debug][gc,task,time   ] GC(0) 	[ thread-roots-task 10562766158 10562767914 ]
+[10.580s][debug][gc,task,time   ] GC(0) 	[ scavenge-roots-task 10562768102 10562769361 ]
+[10.580s][debug][gc,task,time   ] GC(0) 	[ scavenge-roots-task 10562769538 10562773331 ]
+[10.580s][debug][gc,task,time   ] GC(0) 	[ scavenge-roots-task 10562773494 10562934628 ]
+[10.580s][debug][gc,task,time   ] GC(0) 	[ scavenge-roots-task 10562935206 10562956996 ]
+[10.580s][debug][gc,task,time   ] GC(0) 	[ scavenge-roots-task 10562957213 10564755201 ]
+[10.580s][debug][gc,task,time   ] GC(0) 	[ scavenge-roots-task 10564756932 10564758429 ]
+[10.580s][debug][gc,task,time   ] GC(0) 	[ steal-task 10564758609 10578233272 ]
+[10.919s][debug][gc,heap        ] GC(1) Heap before GC invocations=2 (full 0): PSYoungGen      total 38400K, used 38384K [0x00000007d5580000, 0x00000007d8000000, 0x0000000800000000)
+[10.919s][debug][gc,heap        ] GC(1)   eden space 33280K, 100% used [0x00000007d5580000,0x00000007d7600000,0x00000007d7600000)
+[10.919s][debug][gc,heap        ] GC(1)   from space 5120K, 99% used [0x00000007d7600000,0x00000007d7afc020,0x00000007d7b00000)
+[10.919s][debug][gc,heap        ] GC(1)   to   space 5120K, 0% used [0x00000007d7b00000,0x00000007d7b00000,0x00000007d8000000)
+[10.919s][debug][gc,heap        ] GC(1)  ParOldGen       total 87552K, used 2784K [0x0000000780000000, 0x0000000785580000, 0x00000007d5580000)
+[10.919s][debug][gc,heap        ] GC(1)   object space 87552K, 3% used [0x0000000780000000,0x00000007802b8000,0x0000000785580000)
+[10.919s][debug][gc,heap        ] GC(1)  Metaspace       used 12988K, capacity 13394K, committed 13568K, reserved 1060864K
+[10.919s][debug][gc,heap        ] GC(1)   class space    used 1344K, capacity 1500K, committed 1536K, reserved 1048576K
+[10.919s][debug][gc,tlab        ] GC(1) TLAB totals: thrds: 1  refills: 55 max: 55 slow allocs: 6 max 6 waste:  0.1% gc: 0B max: 0B slow: 39384B max: 39384B fast: 0B max: 0B
+[10.919s][info ][gc,start       ] GC(1) Pause Young (Allocation Failure)
+[10.919s][debug][gc,phases,start] GC(1) Scavenge
+[10.929s][debug][gc,phases      ] GC(1) Scavenge 10.064ms
+[10.929s][debug][gc,phases,start] GC(1) Reference Processing
+[10.929s][debug][gc,ref         ] GC(1) Skipped phase1 of Reference Processing due to unavailable references
+[10.929s][debug][gc,ref         ] GC(1) Skipped phase3 of Reference Processing due to unavailable references
+[10.929s][debug][gc,phases,ref  ] GC(1) Reference Processing: 0.1ms
+[10.929s][debug][gc,phases,ref  ] GC(1)   Reconsider SoftReferences: 0.0ms
+[10.929s][debug][gc,phases,ref  ] GC(1)     SoftRef: skipped
+[10.929s][debug][gc,phases,ref  ] GC(1)   Notify Soft/WeakReferences: 0.1ms
+[10.929s][debug][gc,phases,ref  ] GC(1)     SoftRef: 0.0ms
+[10.929s][debug][gc,phases,ref  ] GC(1)     WeakRef: 0.1ms
+[10.929s][debug][gc,phases,ref  ] GC(1)     FinalRef: 0.0ms
+[10.929s][debug][gc,phases,ref  ] GC(1)     Total: 0.1ms
+[10.930s][debug][gc,phases,ref  ] GC(1)   Notify and keep alive finalizable: 0.0ms
+[10.930s][debug][gc,phases,ref  ] GC(1)     FinalRef: skipped
+[10.930s][debug][gc,phases,ref  ] GC(1)   Notify PhantomReferences: 0.0ms
+[10.930s][debug][gc,phases,ref  ] GC(1)     PhantomRef: 0.0ms
+[10.930s][debug][gc,phases,ref  ] GC(1)   SoftReference:
+[10.930s][debug][gc,phases,ref  ] GC(1)     Discovered: 0
+[10.930s][debug][gc,phases,ref  ] GC(1)     Cleared: 0
+[10.930s][debug][gc,phases,ref  ] GC(1)   WeakReference:
+[10.930s][debug][gc,phases,ref  ] GC(1)     Discovered: 887
+[10.930s][debug][gc,phases,ref  ] GC(1)     Cleared: 887
+[10.930s][debug][gc,phases,ref  ] GC(1)   FinalReference:
+[10.930s][debug][gc,phases,ref  ] GC(1)     Discovered: 0
+[10.930s][debug][gc,phases,ref  ] GC(1)     Cleared: 0
+[10.930s][debug][gc,phases,ref  ] GC(1)   PhantomReference:
+[10.930s][debug][gc,phases,ref  ] GC(1)     Discovered: 10
+[10.930s][debug][gc,phases,ref  ] GC(1)     Cleared: 10
+[10.930s][debug][gc,phases      ] GC(1) Reference Processing 0.463ms
+[10.930s][debug][gc,phases,start] GC(1) Weak Processing
+[10.930s][debug][gc,phases      ] GC(1) Weak Processing 0.079ms
+[10.930s][debug][gc,phases,start] GC(1) Scrub String Table
+[10.930s][debug][gc,phases      ] GC(1) Scrub String Table 0.345ms
+[10.930s][debug][gc,ergo        ] GC(1) AdaptiveSizeStart:  collection: 2 
+[10.930s][debug][gc,age         ] GC(1) Desired survivor size 5242880 bytes, new threshold 7 (max threshold 15)
+[10.930s][debug][gc,ergo        ] GC(1) PSAdaptiveSizePolicy::compute_eden_space_size: costs minor_time: 0.016932 major_cost: 0.000000 mutator_cost: 0.983068 throughput_goal: 0.990000
+[10.930s][debug][gc,ergo        ] GC(1) Live_space: 273432608 free_space: 68157440
+[10.930s][debug][gc,ergo        ] GC(1) Old eden_size: 34078720 desired_eden_size: 68157440
+[10.930s][debug][gc,ergo        ] GC(1) AdaptiveSizeStop: collection: 2 
+[10.930s][info ][gc,heap        ] GC(1) PSYoungGen: 38384K->4656K(38400K)
+[10.930s][info ][gc,heap        ] GC(1) ParOldGen: 2784K->2784K(87552K)
+[10.930s][info ][gc,metaspace   ] GC(1) Metaspace: 12988K->12988K(1060864K)
+[10.930s][info ][gc             ] GC(1) Pause Young (Allocation Failure) 40M->7M(123M) 11.472ms
+[10.931s][info ][gc,cpu         ] GC(1) User=0.02s Sys=0.00s Real=0.01s
+[10.931s][debug][gc,heap        ] GC(1) Heap after GC invocations=2 (full 0): PSYoungGen      total 38400K, used 4656K [0x00000007d5580000, 0x00000007da080000, 0x0000000800000000)
+[10.931s][debug][gc,heap        ] GC(1)   eden space 33280K, 0% used [0x00000007d5580000,0x00000007d5580000,0x00000007d7600000)
+[10.931s][debug][gc,heap        ] GC(1)   from space 5120K, 90% used [0x00000007d7b00000,0x00000007d7f8c020,0x00000007d8000000)
+[10.931s][debug][gc,heap        ] GC(1)   to   space 5120K, 0% used [0x00000007d7600000,0x00000007d7600000,0x00000007d7b00000)
+[10.931s][debug][gc,heap        ] GC(1)  ParOldGen       total 87552K, used 2784K [0x0000000780000000, 0x0000000785580000, 0x00000007d5580000)
+[10.931s][debug][gc,heap        ] GC(1)   object space 87552K, 3% used [0x0000000780000000,0x00000007802b8000,0x0000000785580000)
+[10.931s][debug][gc,heap        ] GC(1)  Metaspace       used 12988K, capacity 13394K, committed 13568K, reserved 1060864K
+[10.931s][debug][gc,heap        ] GC(1)   class space    used 1344K, capacity 1500K, committed 1536K, reserved 1048576K
+[10.931s][debug][gc,task,time   ] GC(1) VM-Thread 10918591404 10929254461 10930669630
+[10.931s][debug][gc,task,time   ] GC(1) GC-Thread 0 entries: 5
+[10.931s][debug][gc,task,time   ] GC(1) 	[ old-to-young-roots-task 10919139255 10920850123 ]
+[10.931s][debug][gc,task,time   ] GC(1) 	[ scavenge-roots-task 10920851295 10920879900 ]
+[10.931s][debug][gc,task,time   ] GC(1) 	[ thread-roots-task 10920880224 10928487878 ]
+[10.931s][debug][gc,task,time   ] GC(1) 	[ steal-task 10928488409 10929103526 ]
+[10.931s][debug][gc,task,time   ] GC(1) 	[ waitfor-barrier-task 10929103779 10929139748 ]
+[10.931s][debug][gc,task,time   ] GC(1) GC-Thread 1 entries: 26
+[10.931s][debug][gc,task,time   ] GC(1) 	[ old-to-young-roots-task 10919184244 10919244402 ]
+[10.931s][debug][gc,task,time   ] GC(1) 	[ scavenge-roots-task 10919245968 10922615069 ]
+[10.931s][debug][gc,task,time   ] GC(1) 	[ thread-roots-task 10922616024 10922631864 ]
+[10.931s][debug][gc,task,time   ] GC(1) 	[ thread-roots-task 10922632074 10922638996 ]
+[10.931s][debug][gc,task,time   ] GC(1) 	[ thread-roots-task 10922639272 10922640639 ]
+[10.931s][debug][gc,task,time   ] GC(1) 	[ thread-roots-task 10922640860 10922643272 ]
+[10.931s][debug][gc,task,time   ] GC(1) 	[ thread-roots-task 10922643484 10922644342 ]
+[10.931s][debug][gc,task,time   ] GC(1) 	[ thread-roots-task 10922644539 10922645220 ]
+[10.931s][debug][gc,task,time   ] GC(1) 	[ thread-roots-task 10922645423 10922646449 ]
+[10.931s][debug][gc,task,time   ] GC(1) 	[ thread-roots-task 10922646647 10922655084 ]
+[10.931s][debug][gc,task,time   ] GC(1) 	[ thread-roots-task 10922655286 10922710715 ]
+[10.931s][debug][gc,task,time   ] GC(1) 	[ thread-roots-task 10922710932 10922711852 ]
+[10.931s][debug][gc,task,time   ] GC(1) 	[ thread-roots-task 10922712050 10922727680 ]
+[10.931s][debug][gc,task,time   ] GC(1) 	[ thread-roots-task 10922727878 10922880373 ]
+[10.931s][debug][gc,task,time   ] GC(1) 	[ thread-roots-task 10922880843 10922897536 ]
+[10.931s][debug][gc,task,time   ] GC(1) 	[ thread-roots-task 10922897758 10922901418 ]
+[10.931s][debug][gc,task,time   ] GC(1) 	[ thread-roots-task 10922901632 10922938499 ]
+[10.931s][debug][gc,task,time   ] GC(1) 	[ thread-roots-task 10922938715 10922939978 ]
+[10.931s][debug][gc,task,time   ] GC(1) 	[ scavenge-roots-task 10922940180 10922940805 ]
+[10.931s][debug][gc,task,time   ] GC(1) 	[ scavenge-roots-task 10922941017 10922943499 ]
+[10.931s][debug][gc,task,time   ] GC(1) 	[ scavenge-roots-task 10922943704 10923051140 ]
+[10.931s][debug][gc,task,time   ] GC(1) 	[ scavenge-roots-task 10923051378 10928016352 ]
+[10.931s][debug][gc,task,time   ] GC(1) 	[ scavenge-roots-task 10928017034 10928019848 ]
+[10.931s][debug][gc,task,time   ] GC(1) 	[ scavenge-roots-task 10928020019 10928479372 ]
+[10.931s][debug][gc,task,time   ] GC(1) 	[ scavenge-roots-task 10928479564 10928480272 ]
+[10.931s][debug][gc,task,time   ] GC(1) 	[ steal-task 10928480444 10929124106 ]
+[11.161s][debug][gc,heap        ] GC(2) Heap before GC invocations=3 (full 0): PSYoungGen      total 38400K, used 37936K [0x00000007d5580000, 0x00000007da080000, 0x0000000800000000)
+[11.161s][debug][gc,heap        ] GC(2)   eden space 33280K, 100% used [0x00000007d5580000,0x00000007d7600000,0x00000007d7600000)
+[11.161s][debug][gc,heap        ] GC(2)   from space 5120K, 90% used [0x00000007d7b00000,0x00000007d7f8c020,0x00000007d8000000)
+[11.161s][debug][gc,heap        ] GC(2)   to   space 5120K, 0% used [0x00000007d7600000,0x00000007d7600000,0x00000007d7b00000)
+[11.161s][debug][gc,heap        ] GC(2)  ParOldGen       total 87552K, used 2784K [0x0000000780000000, 0x0000000785580000, 0x00000007d5580000)
+[11.161s][debug][gc,heap        ] GC(2)   object space 87552K, 3% used [0x0000000780000000,0x00000007802b8000,0x0000000785580000)
+[11.161s][debug][gc,heap        ] GC(2)  Metaspace       used 12988K, capacity 13394K, committed 13568K, reserved 1060864K
+[11.161s][debug][gc,heap        ] GC(2)   class space    used 1344K, capacity 1500K, committed 1536K, reserved 1048576K
+[11.161s][debug][gc,tlab        ] GC(2) TLAB totals: thrds: 1  refills: 51 max: 51 slow allocs: 6 max 6 waste:  0.2% gc: 0B max: 0B slow: 45704B max: 45704B fast: 0B max: 0B
+[11.161s][info ][gc,start       ] GC(2) Pause Young (Allocation Failure)
+[11.161s][debug][gc,phases,start] GC(2) Scavenge
+[11.185s][debug][gc,phases      ] GC(2) Scavenge 24.094ms
+[11.185s][debug][gc,phases,start] GC(2) Reference Processing
+[11.185s][debug][gc,ref         ] GC(2) Skipped phase1 of Reference Processing due to unavailable references
+[11.185s][debug][gc,ref         ] GC(2) Skipped phase3 of Reference Processing due to unavailable references
+[11.185s][debug][gc,phases,ref  ] GC(2) Reference Processing: 0.1ms
+[11.185s][debug][gc,phases,ref  ] GC(2)   Reconsider SoftReferences: 0.0ms
+[11.185s][debug][gc,phases,ref  ] GC(2)     SoftRef: skipped
+[11.185s][debug][gc,phases,ref  ] GC(2)   Notify Soft/WeakReferences: 0.1ms
+[11.186s][debug][gc,phases,ref  ] GC(2)     SoftRef: 0.0ms
+[11.186s][debug][gc,phases,ref  ] GC(2)     WeakRef: 0.1ms
+[11.186s][debug][gc,phases,ref  ] GC(2)     FinalRef: 0.0ms
+[11.186s][debug][gc,phases,ref  ] GC(2)     Total: 0.1ms
+[11.186s][debug][gc,phases,ref  ] GC(2)   Notify and keep alive finalizable: 0.0ms
+[11.186s][debug][gc,phases,ref  ] GC(2)     FinalRef: skipped
+[11.186s][debug][gc,phases,ref  ] GC(2)   Notify PhantomReferences: 0.0ms
+[11.186s][debug][gc,phases,ref  ] GC(2)     PhantomRef: 0.0ms
+[11.186s][debug][gc,phases,ref  ] GC(2)   SoftReference:
+[11.186s][debug][gc,phases,ref  ] GC(2)     Discovered: 0
+[11.186s][debug][gc,phases,ref  ] GC(2)     Cleared: 0
+[11.186s][debug][gc,phases,ref  ] GC(2)   WeakReference:
+[11.186s][debug][gc,phases,ref  ] GC(2)     Discovered: 887
+[11.186s][debug][gc,phases,ref  ] GC(2)     Cleared: 887
+[11.186s][debug][gc,phases,ref  ] GC(2)   FinalReference:
+[11.186s][debug][gc,phases,ref  ] GC(2)     Discovered: 0
+[11.186s][debug][gc,phases,ref  ] GC(2)     Cleared: 0
+[11.186s][debug][gc,phases,ref  ] GC(2)   PhantomReference:
+[11.186s][debug][gc,phases,ref  ] GC(2)     Discovered: 10
+[11.186s][debug][gc,phases,ref  ] GC(2)     Cleared: 10
+[11.186s][debug][gc,phases      ] GC(2) Reference Processing 0.386ms
+[11.186s][debug][gc,phases,start] GC(2) Weak Processing
+[11.186s][debug][gc,phases      ] GC(2) Weak Processing 0.078ms
+[11.186s][debug][gc,phases,start] GC(2) Scrub String Table
+[11.186s][debug][gc,phases      ] GC(2) Scrub String Table 0.360ms
+[11.186s][debug][gc,ergo        ] GC(2) AdaptiveSizeStart:  collection: 3 
+[11.186s][debug][gc,age         ] GC(2) Desired survivor size 5242880 bytes, new threshold 7 (max threshold 15)
+[11.186s][debug][gc,ergo        ] GC(2) PSAdaptiveSizePolicy::compute_eden_space_size: costs minor_time: 0.043679 major_cost: 0.000000 mutator_cost: 0.956321 throughput_goal: 0.990000
+[11.186s][debug][gc,ergo        ] GC(2) Live_space: 273508288 free_space: 102236160
+[11.186s][debug][gc,ergo        ] GC(2) Old eden_size: 68157440 desired_eden_size: 68157440
+[11.186s][debug][gc,ergo        ] GC(2) AdaptiveSizeStop: collection: 3 
+[11.186s][info ][gc,heap        ] GC(2) PSYoungGen: 37936K->5104K(38400K)
+[11.186s][info ][gc,heap        ] GC(2) ParOldGen: 2784K->10816K(87552K)
+[11.186s][info ][gc,metaspace   ] GC(2) Metaspace: 12988K->12988K(1060864K)
+[11.186s][info ][gc             ] GC(2) Pause Young (Allocation Failure) 39M->15M(123M) 25.234ms
+[11.186s][info ][gc,cpu         ] GC(2) User=0.04s Sys=0.01s Real=0.03s
+[11.186s][debug][gc,heap        ] GC(2) Heap after GC invocations=3 (full 0): PSYoungGen      total 38400K, used 5104K [0x00000007d5580000, 0x00000007da080000, 0x0000000800000000)
+[11.186s][debug][gc,heap        ] GC(2)   eden space 33280K, 0% used [0x00000007d5580000,0x00000007d5580000,0x00000007d7600000)
+[11.186s][debug][gc,heap        ] GC(2)   from space 5120K, 99% used [0x00000007d7600000,0x00000007d7afc020,0x00000007d7b00000)
+[11.186s][debug][gc,heap        ] GC(2)   to   space 5120K, 0% used [0x00000007d9b80000,0x00000007d9b80000,0x00000007da080000)
+[11.186s][debug][gc,heap        ] GC(2)  ParOldGen       total 87552K, used 10816K [0x0000000780000000, 0x0000000785580000, 0x00000007d5580000)
+[11.186s][debug][gc,heap        ] GC(2)   object space 87552K, 12% used [0x0000000780000000,0x0000000780a90000,0x0000000785580000)
+[11.186s][debug][gc,heap        ] GC(2)  Metaspace       used 12988K, capacity 13394K, committed 13568K, reserved 1060864K
+[11.186s][debug][gc,heap        ] GC(2)   class space    used 1344K, capacity 1500K, committed 1536K, reserved 1048576K
+[11.186s][debug][gc,task,time   ] GC(2) VM-Thread 11160808931 11185318565 11186489478
+[11.187s][debug][gc,task,time   ] GC(2) GC-Thread 0 entries: 4
+[11.187s][debug][gc,task,time   ] GC(2) 	[ old-to-young-roots-task 11161186472 11162233860 ]
+[11.187s][debug][gc,task,time   ] GC(2) 	[ scavenge-roots-task 11162235023 11162256331 ]
+[11.187s][debug][gc,task,time   ] GC(2) 	[ thread-roots-task 11162256630 11167700512 ]
+[11.187s][debug][gc,task,time   ] GC(2) 	[ steal-task 11167701299 11185187839 ]
+[11.187s][debug][gc,task,time   ] GC(2) GC-Thread 1 entries: 27
+[11.187s][debug][gc,task,time   ] GC(2) 	[ old-to-young-roots-task 11161282338 11161323713 ]
+[11.187s][debug][gc,task,time   ] GC(2) 	[ scavenge-roots-task 11161325287 11163617050 ]
+[11.187s][debug][gc,task,time   ] GC(2) 	[ thread-roots-task 11163617599 11163632923 ]
+[11.187s][debug][gc,task,time   ] GC(2) 	[ thread-roots-task 11163633107 11163638730 ]
+[11.187s][debug][gc,task,time   ] GC(2) 	[ thread-roots-task 11163638970 11163639697 ]
+[11.187s][debug][gc,task,time   ] GC(2) 	[ thread-roots-task 11163639880 11163642060 ]
+[11.187s][debug][gc,task,time   ] GC(2) 	[ thread-roots-task 11163642242 11163643066 ]
+[11.187s][debug][gc,task,time   ] GC(2) 	[ thread-roots-task 11163643237 11163643918 ]
+[11.187s][debug][gc,task,time   ] GC(2) 	[ thread-roots-task 11163644088 11163645123 ]
+[11.187s][debug][gc,task,time   ] GC(2) 	[ thread-roots-task 11163645293 11163653274 ]
+[11.187s][debug][gc,task,time   ] GC(2) 	[ thread-roots-task 11163653451 11163679154 ]
+[11.187s][debug][gc,task,time   ] GC(2) 	[ thread-roots-task 11163679329 11163679900 ]
+[11.187s][debug][gc,task,time   ] GC(2) 	[ thread-roots-task 11163680067 11163693930 ]
+[11.187s][debug][gc,task,time   ] GC(2) 	[ thread-roots-task 11163694112 11163791347 ]
+[11.187s][debug][gc,task,time   ] GC(2) 	[ thread-roots-task 11163791770 11163802363 ]
+[11.187s][debug][gc,task,time   ] GC(2) 	[ thread-roots-task 11163802545 11163805732 ]
+[11.187s][debug][gc,task,time   ] GC(2) 	[ thread-roots-task 11163805911 11163821074 ]
+[11.187s][debug][gc,task,time   ] GC(2) 	[ thread-roots-task 11163821253 11163822328 ]
+[11.187s][debug][gc,task,time   ] GC(2) 	[ scavenge-roots-task 11163822493 11163823128 ]
+[11.187s][debug][gc,task,time   ] GC(2) 	[ scavenge-roots-task 11163823308 11163825672 ]
+[11.187s][debug][gc,task,time   ] GC(2) 	[ scavenge-roots-task 11163825857 11163898453 ]
+[11.187s][debug][gc,task,time   ] GC(2) 	[ scavenge-roots-task 11163898628 11167220750 ]
+[11.187s][debug][gc,task,time   ] GC(2) 	[ scavenge-roots-task 11167221206 11167223949 ]
+[11.187s][debug][gc,task,time   ] GC(2) 	[ scavenge-roots-task 11167224133 11167689625 ]
+[11.187s][debug][gc,task,time   ] GC(2) 	[ scavenge-roots-task 11167689838 11167690404 ]
+[11.187s][debug][gc,task,time   ] GC(2) 	[ steal-task 11167690574 11185187888 ]
+[11.187s][debug][gc,task,time   ] GC(2) 	[ waitfor-barrier-task 11185189169 11185208018 ]
+[11.524s][debug][gc,heap        ] GC(3) Heap before GC invocations=4 (full 0): PSYoungGen      total 38400K, used 38384K [0x00000007d5580000, 0x00000007da080000, 0x0000000800000000)
+[11.524s][debug][gc,heap        ] GC(3)   eden space 33280K, 100% used [0x00000007d5580000,0x00000007d7600000,0x00000007d7600000)
+[11.524s][debug][gc,heap        ] GC(3)   from space 5120K, 99% used [0x00000007d7600000,0x00000007d7afc020,0x00000007d7b00000)
+[11.524s][debug][gc,heap        ] GC(3)   to   space 5120K, 0% used [0x00000007d9b80000,0x00000007d9b80000,0x00000007da080000)
+[11.524s][debug][gc,heap        ] GC(3)  ParOldGen       total 87552K, used 10816K [0x0000000780000000, 0x0000000785580000, 0x00000007d5580000)
+[11.524s][debug][gc,heap        ] GC(3)   object space 87552K, 12% used [0x0000000780000000,0x0000000780a90000,0x0000000785580000)
+[11.524s][debug][gc,heap        ] GC(3)  Metaspace       used 13009K, capacity 13406K, committed 13568K, reserved 1060864K
+[11.524s][debug][gc,heap        ] GC(3)   class space    used 1346K, capacity 1503K, committed 1536K, reserved 1048576K
+[11.524s][debug][gc,tlab        ] GC(3) TLAB totals: thrds: 5  refills: 49 max: 45 slow allocs: 7 max 7 waste:  4.4% gc: 1246984B max: 340752B slow: 26408B max: 26408B fast: 0B max: 0B
+[11.524s][info ][gc,start       ] GC(3) Pause Young (Allocation Failure)
+[11.524s][debug][gc,phases,start] GC(3) Scavenge
+[11.542s][debug][gc,phases      ] GC(3) Scavenge 17.933ms
+[11.542s][debug][gc,phases,start] GC(3) Reference Processing
+[11.542s][debug][gc,ref         ] GC(3) Skipped phase1 of Reference Processing due to unavailable references
+[11.542s][debug][gc,ref         ] GC(3) Skipped phase3 of Reference Processing due to unavailable references
+[11.542s][debug][gc,phases,ref  ] GC(3) Reference Processing: 0.1ms
+[11.542s][debug][gc,phases,ref  ] GC(3)   Reconsider SoftReferences: 0.0ms
+[11.542s][debug][gc,phases,ref  ] GC(3)     SoftRef: skipped
+[11.542s][debug][gc,phases,ref  ] GC(3)   Notify Soft/WeakReferences: 0.1ms
+[11.542s][debug][gc,phases,ref  ] GC(3)     SoftRef: 0.0ms
+[11.542s][debug][gc,phases,ref  ] GC(3)     WeakRef: 0.1ms
+[11.542s][debug][gc,phases,ref  ] GC(3)     FinalRef: 0.0ms
+[11.542s][debug][gc,phases,ref  ] GC(3)     Total: 0.1ms
+[11.542s][debug][gc,phases,ref  ] GC(3)   Notify and keep alive finalizable: 0.0ms
+[11.542s][debug][gc,phases,ref  ] GC(3)     FinalRef: skipped
+[11.542s][debug][gc,phases,ref  ] GC(3)   Notify PhantomReferences: 0.0ms
+[11.542s][debug][gc,phases,ref  ] GC(3)     PhantomRef: 0.0ms
+[11.542s][debug][gc,phases,ref  ] GC(3)   SoftReference:
+[11.543s][debug][gc,phases,ref  ] GC(3)     Discovered: 0
+[11.543s][debug][gc,phases,ref  ] GC(3)     Cleared: 0
+[11.543s][debug][gc,phases,ref  ] GC(3)   WeakReference:
+[11.543s][debug][gc,phases,ref  ] GC(3)     Discovered: 887
+[11.543s][debug][gc,phases,ref  ] GC(3)     Cleared: 887
+[11.543s][debug][gc,phases,ref  ] GC(3)   FinalReference:
+[11.543s][debug][gc,phases,ref  ] GC(3)     Discovered: 0
+[11.543s][debug][gc,phases,ref  ] GC(3)     Cleared: 0
+[11.543s][debug][gc,phases,ref  ] GC(3)   PhantomReference:
+[11.543s][debug][gc,phases,ref  ] GC(3)     Discovered: 10
+[11.543s][debug][gc,phases,ref  ] GC(3)     Cleared: 10
+[11.543s][debug][gc,phases      ] GC(3) Reference Processing 0.415ms
+[11.543s][debug][gc,phases,start] GC(3) Weak Processing
+[11.543s][debug][gc,phases      ] GC(3) Weak Processing 0.080ms
+[11.543s][debug][gc,phases,start] GC(3) Scrub String Table
+[11.543s][debug][gc,phases      ] GC(3) Scrub String Table 0.347ms
+[11.543s][debug][gc,ergo        ] GC(3) AdaptiveSizeStart:  collection: 4 
+[11.543s][debug][gc,age         ] GC(3) Desired survivor size 5242880 bytes, new threshold 7 (max threshold 15)
+[11.543s][debug][gc,ergo        ] GC(3) PSAdaptiveSizePolicy::compute_eden_space_size: costs minor_time: 0.046005 major_cost: 0.000000 mutator_cost: 0.953995 throughput_goal: 0.990000
+[11.543s][debug][gc,ergo        ] GC(3) Live_space: 273546720 free_space: 102236160
+[11.543s][debug][gc,ergo        ] GC(3) Old eden_size: 68157440 desired_eden_size: 68157440
+[11.543s][debug][gc,ergo        ] GC(3) AdaptiveSizeStop: collection: 4 
+[11.543s][info ][gc,heap        ] GC(3) PSYoungGen: 38384K->5104K(71680K)
+[11.543s][info ][gc,heap        ] GC(3) ParOldGen: 10816K->14168K(87552K)
+[11.543s][info ][gc,metaspace   ] GC(3) Metaspace: 13009K->13009K(1060864K)
+[11.543s][info ][gc             ] GC(3) Pause Young (Allocation Failure) 48M->18M(155M) 19.059ms
+[11.543s][info ][gc,cpu         ] GC(3) User=0.03s Sys=0.00s Real=0.01s
+[11.543s][debug][gc,heap        ] GC(3) Heap after GC invocations=4 (full 0): PSYoungGen      total 71680K, used 5104K [0x00000007d5580000, 0x00000007da080000, 0x0000000800000000)
+[11.543s][debug][gc,heap        ] GC(3)   eden space 66560K, 0% used [0x00000007d5580000,0x00000007d5580000,0x00000007d9680000)
+[11.543s][debug][gc,heap        ] GC(3)   from space 5120K, 99% used [0x00000007d9b80000,0x00000007da07c020,0x00000007da080000)
+[11.543s][debug][gc,heap        ] GC(3)   to   space 5120K, 0% used [0x00000007d9680000,0x00000007d9680000,0x00000007d9b80000)
+[11.543s][debug][gc,heap        ] GC(3)  ParOldGen       total 87552K, used 14168K [0x0000000780000000, 0x0000000785580000, 0x00000007d5580000)
+[11.543s][debug][gc,heap        ] GC(3)   object space 87552K, 16% used [0x0000000780000000,0x0000000780dd6000,0x0000000785580000)
+[11.543s][debug][gc,heap        ] GC(3)  Metaspace       used 13009K, capacity 13406K, committed 13568K, reserved 1060864K
+[11.543s][debug][gc,heap        ] GC(3)   class space    used 1346K, capacity 1503K, committed 1536K, reserved 1048576K
+[11.543s][debug][gc,task,time   ] GC(3) VM-Thread 11523856794 11542235393 11543393659
+[11.543s][debug][gc,task,time   ] GC(3) GC-Thread 0 entries: 26
+[11.543s][debug][gc,task,time   ] GC(3) 	[ old-to-young-roots-task 11524293116 11524412677 ]
+[11.543s][debug][gc,task,time   ] GC(3) 	[ scavenge-roots-task 11524414114 11527729270 ]
+[11.543s][debug][gc,task,time   ] GC(3) 	[ thread-roots-task 11527730198 11527746279 ]
+[11.543s][debug][gc,task,time   ] GC(3) 	[ thread-roots-task 11527746586 11527754567 ]
+[11.543s][debug][gc,task,time   ] GC(3) 	[ thread-roots-task 11527754902 11527755973 ]
+[11.543s][debug][gc,task,time   ] GC(3) 	[ thread-roots-task 11527756357 11527758886 ]
+[11.543s][debug][gc,task,time   ] GC(3) 	[ thread-roots-task 11527759225 11527760166 ]
+[11.543s][debug][gc,task,time   ] GC(3) 	[ thread-roots-task 11527760399 11527761269 ]
+[11.543s][debug][gc,task,time   ] GC(3) 	[ thread-roots-task 11527761520 11527762854 ]
+[11.544s][debug][gc,task,time   ] GC(3) 	[ thread-roots-task 11527763105 11527774335 ]
+[11.544s][debug][gc,task,time   ] GC(3) 	[ thread-roots-task 11527774578 11527832265 ]
+[11.544s][debug][gc,task,time   ] GC(3) 	[ thread-roots-task 11527832508 11527833172 ]
+[11.544s][debug][gc,task,time   ] GC(3) 	[ thread-roots-task 11527833438 11527852268 ]
+[11.544s][debug][gc,task,time   ] GC(3) 	[ thread-roots-task 11527852562 11528048265 ]
+[11.544s][debug][gc,task,time   ] GC(3) 	[ thread-roots-task 11528048890 11528067359 ]
+[11.544s][debug][gc,task,time   ] GC(3) 	[ thread-roots-task 11528067645 11528072732 ]
+[11.544s][debug][gc,task,time   ] GC(3) 	[ thread-roots-task 11528072975 11528112067 ]
+[11.544s][debug][gc,task,time   ] GC(3) 	[ thread-roots-task 11528112345 11528113916 ]
+[11.544s][debug][gc,task,time   ] GC(3) 	[ scavenge-roots-task 11528114166 11528114815 ]
+[11.544s][debug][gc,task,time   ] GC(3) 	[ scavenge-roots-task 11528115088 11528117765 ]
+[11.544s][debug][gc,task,time   ] GC(3) 	[ scavenge-roots-task 11528118003 11528327302 ]
+[11.544s][debug][gc,task,time   ] GC(3) 	[ scavenge-roots-task 11528328466 11534125198 ]
+[11.544s][debug][gc,task,time   ] GC(3) 	[ scavenge-roots-task 11534126277 11534129584 ]
+[11.544s][debug][gc,task,time   ] GC(3) 	[ scavenge-roots-task 11534129763 11534585520 ]
+[11.544s][debug][gc,task,time   ] GC(3) 	[ scavenge-roots-task 11534585694 11534586456 ]
+[11.544s][debug][gc,task,time   ] GC(3) 	[ steal-task 11534586588 11542114838 ]
+[11.544s][debug][gc,task,time   ] GC(3) GC-Thread 1 entries: 5
+[11.544s][debug][gc,task,time   ] GC(3) 	[ old-to-young-roots-task 11524264574 11526241500 ]
+[11.544s][debug][gc,task,time   ] GC(3) 	[ scavenge-roots-task 11526243189 11526270524 ]
+[11.544s][debug][gc,task,time   ] GC(3) 	[ thread-roots-task 11526270899 11534594706 ]
+[11.544s][debug][gc,task,time   ] GC(3) 	[ steal-task 11534595494 11542113765 ]
+[11.544s][debug][gc,task,time   ] GC(3) 	[ waitfor-barrier-task 11542114230 11542129370 ]
+[12.129s][debug][gc,heap        ] GC(4) Heap before GC invocations=5 (full 0): PSYoungGen      total 71680K, used 70887K [0x00000007d5580000, 0x00000007da080000, 0x0000000800000000)
+[12.129s][debug][gc,heap        ] GC(4)   eden space 66560K, 98% used [0x00000007d5580000,0x00000007d95bddb8,0x00000007d9680000)
+[12.129s][debug][gc,heap        ] GC(4)   from space 5120K, 99% used [0x00000007d9b80000,0x00000007da07c020,0x00000007da080000)
+[12.129s][debug][gc,heap        ] GC(4)   to   space 5120K, 0% used [0x00000007d9680000,0x00000007d9680000,0x00000007d9b80000)
+[12.129s][debug][gc,heap        ] GC(4)  ParOldGen       total 87552K, used 14168K [0x0000000780000000, 0x0000000785580000, 0x00000007d5580000)
+[12.129s][debug][gc,heap        ] GC(4)   object space 87552K, 16% used [0x0000000780000000,0x0000000780dd6000,0x0000000785580000)
+[12.129s][debug][gc,heap        ] GC(4)  Metaspace       used 13009K, capacity 13406K, committed 13568K, reserved 1060864K
+[12.129s][debug][gc,heap        ] GC(4)   class space    used 1346K, capacity 1503K, committed 1536K, reserved 1048576K
+[12.129s][debug][gc,tlab        ] GC(4) TLAB totals: thrds: 1  refills: 50 max: 50 slow allocs: 5 max 5 waste:  0.2% gc: 103224B max: 103224B slow: 29352B max: 29352B fast: 0B max: 0B
+[12.129s][info ][gc,start       ] GC(4) Pause Young (Allocation Failure)
+[12.129s][debug][gc,phases,start] GC(4) Scavenge
+[12.156s][debug][gc,phases      ] GC(4) Scavenge 26.475ms
+[12.156s][debug][gc,phases,start] GC(4) Reference Processing
+[12.156s][debug][gc,ref         ] GC(4) Skipped phase1 of Reference Processing due to unavailable references
+[12.156s][debug][gc,ref         ] GC(4) Skipped phase3 of Reference Processing due to unavailable references
+[12.156s][debug][gc,phases,ref  ] GC(4) Reference Processing: 0.1ms
+[12.156s][debug][gc,phases,ref  ] GC(4)   Reconsider SoftReferences: 0.0ms
+[12.156s][debug][gc,phases,ref  ] GC(4)     SoftRef: skipped
+[12.156s][debug][gc,phases,ref  ] GC(4)   Notify Soft/WeakReferences: 0.1ms
+[12.156s][debug][gc,phases,ref  ] GC(4)     SoftRef: 0.0ms
+[12.156s][debug][gc,phases,ref  ] GC(4)     WeakRef: 0.1ms
+[12.156s][debug][gc,phases,ref  ] GC(4)     FinalRef: 0.0ms
+[12.156s][debug][gc,phases,ref  ] GC(4)     Total: 0.1ms
+[12.156s][debug][gc,phases,ref  ] GC(4)   Notify and keep alive finalizable: 0.0ms
+[12.156s][debug][gc,phases,ref  ] GC(4)     FinalRef: skipped
+[12.156s][debug][gc,phases,ref  ] GC(4)   Notify PhantomReferences: 0.0ms
+[12.156s][debug][gc,phases,ref  ] GC(4)     PhantomRef: 0.0ms
+[12.156s][debug][gc,phases,ref  ] GC(4)   SoftReference:
+[12.156s][debug][gc,phases,ref  ] GC(4)     Discovered: 0
+[12.156s][debug][gc,phases,ref  ] GC(4)     Cleared: 0
+[12.156s][debug][gc,phases,ref  ] GC(4)   WeakReference:
+[12.156s][debug][gc,phases,ref  ] GC(4)     Discovered: 887
+[12.156s][debug][gc,phases,ref  ] GC(4)     Cleared: 887
+[12.156s][debug][gc,phases,ref  ] GC(4)   FinalReference:
+[12.156s][debug][gc,phases,ref  ] GC(4)     Discovered: 0
+[12.156s][debug][gc,phases,ref  ] GC(4)     Cleared: 0
+[12.156s][debug][gc,phases,ref  ] GC(4)   PhantomReference:
+[12.156s][debug][gc,phases,ref  ] GC(4)     Discovered: 10
+[12.156s][debug][gc,phases,ref  ] GC(4)     Cleared: 10
+[12.156s][debug][gc,phases      ] GC(4) Reference Processing 0.409ms
+[12.156s][debug][gc,phases,start] GC(4) Weak Processing
+[12.156s][debug][gc,phases      ] GC(4) Weak Processing 0.071ms
+[12.156s][debug][gc,phases,start] GC(4) Scrub String Table
+[12.157s][debug][gc,phases      ] GC(4) Scrub String Table 0.320ms
+[12.157s][debug][gc,ergo        ] GC(4) AdaptiveSizeStart:  collection: 5 
+[12.157s][debug][gc,ergo        ] GC(4) avg_survived_padded_avg: 15770222.000000
+[12.157s][debug][gc,ergo        ] GC(4) avg_promoted_padded_avg: 9560591.000000  avg_pretenured_padded_avg: 0.000000  tenuring_thresh: 6  target_size: 16252928
+[12.157s][debug][gc,age         ] GC(4) Desired survivor size 16252928 bytes, new threshold 6 (max threshold 15)
+[12.157s][debug][gc,ergo        ] GC(4) PSAdaptiveSizePolicy::compute_eden_space_size: costs minor_time: 0.045712 major_cost: 0.000000 mutator_cost: 0.954288 throughput_goal: 0.990000
+[12.157s][debug][gc,ergo        ] GC(4) Live_space: 273569792 free_space: 102236160
+[12.157s][debug][gc,ergo        ] GC(4) Old eden_size: 68157440 desired_eden_size: 136314880
+[12.157s][debug][gc,ergo        ] GC(4) AdaptiveSizeStop: collection: 5 
+[12.157s][info ][gc,heap        ] GC(4) PSYoungGen: 70887K->5104K(71680K)
+[12.157s][info ][gc,heap        ] GC(4) ParOldGen: 14168K->22200K(87552K)
+[12.157s][info ][gc,metaspace   ] GC(4) Metaspace: 13009K->13009K(1060864K)
+[12.157s][info ][gc             ] GC(4) Pause Young (Allocation Failure) 83M->26M(155M) 27.820ms
+[12.157s][info ][gc,cpu         ] GC(4) User=0.06s Sys=0.01s Real=0.03s
+[12.157s][debug][gc,heap        ] GC(4) Heap after GC invocations=5 (full 0): PSYoungGen      total 71680K, used 5104K [0x00000007d5580000, 0x00000007df680000, 0x0000000800000000)
+[12.157s][debug][gc,heap        ] GC(4)   eden space 66560K, 0% used [0x00000007d5580000,0x00000007d5580000,0x00000007d9680000)
+[12.157s][debug][gc,heap        ] GC(4)   from space 5120K, 99% used [0x00000007d9680000,0x00000007d9b7c040,0x00000007d9b80000)
+[12.157s][debug][gc,heap        ] GC(4)   to   space 15872K, 0% used [0x00000007de700000,0x00000007de700000,0x00000007df680000)
+[12.157s][debug][gc,heap        ] GC(4)  ParOldGen       total 87552K, used 22200K [0x0000000780000000, 0x0000000785580000, 0x00000007d5580000)
+[12.157s][debug][gc,heap        ] GC(4)   object space 87552K, 25% used [0x0000000780000000,0x00000007815ae000,0x0000000785580000)
+[12.157s][debug][gc,heap        ] GC(4)  Metaspace       used 13009K, capacity 13406K, committed 13568K, reserved 1060864K
+[12.157s][debug][gc,heap        ] GC(4)   class space    used 1346K, capacity 1503K, committed 1536K, reserved 1048576K
+[12.157s][debug][gc,task,time   ] GC(4) VM-Thread 12128807781 12155696018 12156992815
+[12.157s][debug][gc,task,time   ] GC(4) GC-Thread 0 entries: 20
+[12.157s][debug][gc,task,time   ] GC(4) 	[ noop task 12129184065 12129191833 ]
+[12.157s][debug][gc,task,time   ] GC(4) 	[ old-to-young-roots-task 12129195593 12130794067 ]
+[12.157s][debug][gc,task,time   ] GC(4) 	[ thread-roots-task 12130795382 12130816695 ]
+[12.157s][debug][gc,task,time   ] GC(4) 	[ thread-roots-task 12130816926 12130825151 ]
+[12.157s][debug][gc,task,time   ] GC(4) 	[ thread-roots-task 12130825367 12130832315 ]
+[12.157s][debug][gc,task,time   ] GC(4) 	[ thread-roots-task 12130832525 12130834562 ]
+[12.157s][debug][gc,task,time   ] GC(4) 	[ thread-roots-task 12130834760 12130835732 ]
+[12.157s][debug][gc,task,time   ] GC(4) 	[ thread-roots-task 12130835927 12130836565 ]
+[12.157s][debug][gc,task,time   ] GC(4) 	[ thread-roots-task 12130836721 12130837810 ]
+[12.157s][debug][gc,task,time   ] GC(4) 	[ thread-roots-task 12130838029 12130856576 ]
+[12.157s][debug][gc,task,time   ] GC(4) 	[ thread-roots-task 12130856784 12130921100 ]
+[12.157s][debug][gc,task,time   ] GC(4) 	[ thread-roots-task 12130921368 12131171178 ]
+[12.157s][debug][gc,task,time   ] GC(4) 	[ thread-roots-task 12131171513 12131176477 ]
+[12.157s][debug][gc,task,time   ] GC(4) 	[ thread-roots-task 12131176645 12131235975 ]
+[12.157s][debug][gc,task,time   ] GC(4) 	[ thread-roots-task 12131236221 12131237690 ]
+[12.157s][debug][gc,task,time   ] GC(4) 	[ scavenge-roots-task 12131237893 12131238529 ]
+[12.157s][debug][gc,task,time   ] GC(4) 	[ scavenge-roots-task 12131238736 12131262499 ]
+[12.157s][debug][gc,task,time   ] GC(4) 	[ scavenge-roots-task 12131262810 12131380817 ]
+[12.157s][debug][gc,task,time   ] GC(4) 	[ scavenge-roots-task 12131381282 12139447149 ]
+[12.157s][debug][gc,task,time   ] GC(4) 	[ steal-task 12139448585 12155576544 ]
+[12.157s][debug][gc,task,time   ] GC(4) GC-Thread 1 entries: 7
+[12.157s][debug][gc,task,time   ] GC(4) 	[ noop task 12129173102 12129173845 ]
+[12.157s][debug][gc,task,time   ] GC(4) 	[ old-to-young-roots-task 12129200953 12129290646 ]
+[12.157s][debug][gc,task,time   ] GC(4) 	[ scavenge-roots-task 12129291217 12130864322 ]
+[12.157s][debug][gc,task,time   ] GC(4) 	[ thread-roots-task 12130864809 12130865935 ]
+[12.157s][debug][gc,task,time   ] GC(4) 	[ thread-roots-task 12130866139 12130893817 ]
+[12.157s][debug][gc,task,time   ] GC(4) 	[ thread-roots-task 12130894286 12133048185 ]
+[12.157s][debug][gc,task,time   ] GC(4) 	[ steal-task 12133049220 12155576544 ]
+[12.157s][debug][gc,task,time   ] GC(4) GC-Thread 2 entries: 8
+[12.157s][debug][gc,task,time   ] GC(4) 	[ old-to-young-roots-task 12129201690 12129275626 ]
+[12.157s][debug][gc,task,time   ] GC(4) 	[ scavenge-roots-task 12129279534 12129293230 ]
+[12.157s][debug][gc,task,time   ] GC(4) 	[ thread-roots-task 12129293628 12131384364 ]
+[12.157s][debug][gc,task,time   ] GC(4) 	[ scavenge-roots-task 12131385153 12131387722 ]
+[12.157s][debug][gc,task,time   ] GC(4) 	[ scavenge-roots-task 12131387911 12132094595 ]
+[12.157s][debug][gc,task,time   ] GC(4) 	[ scavenge-roots-task 12132095557 12132097357 ]
+[12.157s][debug][gc,task,time   ] GC(4) 	[ steal-task 12132097701 12155576799 ]
+[12.157s][debug][gc,task,time   ] GC(4) 	[ waitfor-barrier-task 12155577715 12155602298 ]
+[12.828s][debug][gc,heap        ] GC(5) Heap before GC invocations=6 (full 0): PSYoungGen      total 71680K, used 71664K [0x00000007d5580000, 0x00000007df680000, 0x0000000800000000)
+[12.828s][debug][gc,heap        ] GC(5)   eden space 66560K, 100% used [0x00000007d5580000,0x00000007d9680000,0x00000007d9680000)
+[12.828s][debug][gc,heap        ] GC(5)   from space 5120K, 99% used [0x00000007d9680000,0x00000007d9b7c040,0x00000007d9b80000)
+[12.828s][debug][gc,heap        ] GC(5)   to   space 15872K, 0% used [0x00000007de700000,0x00000007de700000,0x00000007df680000)
+[12.828s][debug][gc,heap        ] GC(5)  ParOldGen       total 87552K, used 22200K [0x0000000780000000, 0x0000000785580000, 0x00000007d5580000)
+[12.828s][debug][gc,heap        ] GC(5)   object space 87552K, 25% used [0x0000000780000000,0x00000007815ae000,0x0000000785580000)
+[12.828s][debug][gc,heap        ] GC(5)  Metaspace       used 13015K, capacity 13409K, committed 13568K, reserved 1060864K
+[12.828s][debug][gc,heap        ] GC(5)   class space    used 1346K, capacity 1504K, committed 1536K, reserved 1048576K
+[12.828s][debug][gc,tlab        ] GC(5) TLAB totals: thrds: 5  refills: 50 max: 46 slow allocs: 8 max 8 waste:  2.8% gc: 1681736B max: 447304B slow: 29432B max: 29432B fast: 0B max: 0B
+[12.828s][info ][gc,start       ] GC(5) Pause Young (Allocation Failure)
+[12.828s][debug][gc,phases,start] GC(5) Scavenge
+[12.839s][debug][gc,phases      ] GC(5) Scavenge 10.232ms
+[12.839s][debug][gc,phases,start] GC(5) Reference Processing
+[12.839s][debug][gc,ref         ] GC(5) Skipped phase1 of Reference Processing due to unavailable references
+[12.839s][debug][gc,ref         ] GC(5) Skipped phase3 of Reference Processing due to unavailable references
+[12.839s][debug][gc,phases,ref  ] GC(5) Reference Processing: 0.2ms
+[12.839s][debug][gc,phases,ref  ] GC(5)   Reconsider SoftReferences: 0.1ms
+[12.839s][debug][gc,phases,ref  ] GC(5)     SoftRef: skipped
+[12.839s][debug][gc,phases,ref  ] GC(5)   Notify Soft/WeakReferences: 0.1ms
+[12.839s][debug][gc,phases,ref  ] GC(5)     SoftRef: 0.0ms
+[12.839s][debug][gc,phases,ref  ] GC(5)     WeakRef: 0.1ms
+[12.839s][debug][gc,phases,ref  ] GC(5)     FinalRef: 0.0ms
+[12.839s][debug][gc,phases,ref  ] GC(5)     Total: 0.1ms
+[12.839s][debug][gc,phases,ref  ] GC(5)   Notify and keep alive finalizable: 0.0ms
+[12.839s][debug][gc,phases,ref  ] GC(5)     FinalRef: skipped
+[12.839s][debug][gc,phases,ref  ] GC(5)   Notify PhantomReferences: 0.0ms
+[12.839s][debug][gc,phases,ref  ] GC(5)     PhantomRef: 0.0ms
+[12.839s][debug][gc,phases,ref  ] GC(5)   SoftReference:
+[12.839s][debug][gc,phases,ref  ] GC(5)     Discovered: 0
+[12.839s][debug][gc,phases,ref  ] GC(5)     Cleared: 0
+[12.839s][debug][gc,phases,ref  ] GC(5)   WeakReference:
+[12.839s][debug][gc,phases,ref  ] GC(5)     Discovered: 887
+[12.839s][debug][gc,phases,ref  ] GC(5)     Cleared: 887
+[12.839s][debug][gc,phases,ref  ] GC(5)   FinalReference:
+[12.839s][debug][gc,phases,ref  ] GC(5)     Discovered: 0
+[12.839s][debug][gc,phases,ref  ] GC(5)     Cleared: 0
+[12.839s][debug][gc,phases,ref  ] GC(5)   PhantomReference:
+[12.839s][debug][gc,phases,ref  ] GC(5)     Discovered: 10
+[12.839s][debug][gc,phases,ref  ] GC(5)     Cleared: 10
+[12.839s][debug][gc,phases      ] GC(5) Reference Processing 0.506ms
+[12.839s][debug][gc,phases,start] GC(5) Weak Processing
+[12.839s][debug][gc,phases      ] GC(5) Weak Processing 0.085ms
+[12.839s][debug][gc,phases,start] GC(5) Scrub String Table
+[12.840s][debug][gc,phases      ] GC(5) Scrub String Table 0.355ms
+[12.840s][debug][gc,ergo        ] GC(5) AdaptiveSizeStart:  collection: 6 
+[12.840s][debug][gc,ergo        ] GC(5) avg_survived_padded_avg: 15861788.000000
+[12.840s][debug][gc,ergo        ] GC(5) avg_promoted_padded_avg: 9856595.000000  avg_pretenured_padded_avg: 0.000000  tenuring_thresh: 5  target_size: 16252928
+[12.840s][debug][gc,age         ] GC(5) Desired survivor size 16252928 bytes, new threshold 5 (max threshold 15)
+[12.840s][debug][gc,ergo        ] GC(5) PSAdaptiveSizePolicy::compute_eden_space_size: costs minor_time: 0.038431 major_cost: 0.000000 mutator_cost: 0.961569 throughput_goal: 0.990000
+[12.840s][debug][gc,ergo        ] GC(5) Live_space: 273592416 free_space: 170393600
+[12.840s][debug][gc,ergo        ] GC(5) Old eden_size: 136314880 desired_eden_size: 136314880
+[12.840s][debug][gc,ergo        ] GC(5) AdaptiveSizeStop: collection: 6 
+[12.840s][info ][gc,heap        ] GC(5) PSYoungGen: 71664K->5152K(148992K)
+[12.840s][info ][gc,heap        ] GC(5) ParOldGen: 22200K->22208K(87552K)
+[12.840s][info ][gc,metaspace   ] GC(5) Metaspace: 13015K->13015K(1060864K)
+[12.840s][info ][gc             ] GC(5) Pause Young (Allocation Failure) 91M->26M(231M) 11.542ms
+[12.840s][info ][gc,cpu         ] GC(5) User=0.03s Sys=0.00s Real=0.01s
+[12.840s][debug][gc,heap        ] GC(5) Heap after GC invocations=6 (full 0): PSYoungGen      total 148992K, used 5152K [0x00000007d5580000, 0x00000007df680000, 0x0000000800000000)
+[12.840s][debug][gc,heap        ] GC(5)   eden space 133120K, 0% used [0x00000007d5580000,0x00000007d5580000,0x00000007dd780000)
+[12.840s][debug][gc,heap        ] GC(5)   from space 15872K, 32% used [0x00000007de700000,0x00000007dec08030,0x00000007df680000)
+[12.840s][debug][gc,heap        ] GC(5)   to   space 15872K, 0% used [0x00000007dd780000,0x00000007dd780000,0x00000007de700000)
+[12.840s][debug][gc,heap        ] GC(5)  ParOldGen       total 87552K, used 22208K [0x0000000780000000, 0x0000000785580000, 0x00000007d5580000)
+[12.840s][debug][gc,heap        ] GC(5)   object space 87552K, 25% used [0x0000000780000000,0x00000007815b0000,0x0000000785580000)
+[12.840s][debug][gc,heap        ] GC(5)  Metaspace       used 13015K, capacity 13409K, committed 13568K, reserved 1060864K
+[12.840s][debug][gc,heap        ] GC(5)   class space    used 1346K, capacity 1504K, committed 1536K, reserved 1048576K
+[12.840s][debug][gc,task,time   ] GC(5) VM-Thread 12828015598 12838764333 12840165531
+[12.840s][debug][gc,task,time   ] GC(5) GC-Thread 0 entries: 6
+[12.840s][debug][gc,task,time   ] GC(5) 	[ old-to-young-roots-task 12828527774 12828715640 ]
+[12.840s][debug][gc,task,time   ] GC(5) 	[ scavenge-roots-task 12828717449 12831925895 ]
+[12.840s][debug][gc,task,time   ] GC(5) 	[ scavenge-roots-task 12831927133 12831929848 ]
+[12.840s][debug][gc,task,time   ] GC(5) 	[ scavenge-roots-task 12831930211 12832782080 ]
+[12.840s][debug][gc,task,time   ] GC(5) 	[ scavenge-roots-task 12832782732 12832783631 ]
+[12.840s][debug][gc,task,time   ] GC(5) 	[ steal-task 12832783918 12838613503 ]
+[12.840s][debug][gc,task,time   ] GC(5) GC-Thread 1 entries: 4
+[12.840s][debug][gc,task,time   ] GC(5) 	[ old-to-young-roots-task 12828540348 12829720987 ]
+[12.840s][debug][gc,task,time   ] GC(5) 	[ scavenge-roots-task 12829722485 12829760232 ]
+[12.840s][debug][gc,task,time   ] GC(5) 	[ thread-roots-task 12829760778 12832818442 ]
+[12.840s][debug][gc,task,time   ] GC(5) 	[ steal-task 12832819457 12838613968 ]
+[12.840s][debug][gc,task,time   ] GC(5) GC-Thread 2 entries: 23
+[12.840s][debug][gc,task,time   ] GC(5) 	[ old-to-young-roots-task 12828478289 12830757621 ]
+[12.840s][debug][gc,task,time   ] GC(5) 	[ thread-roots-task 12830759364 12830780909 ]
+[12.840s][debug][gc,task,time   ] GC(5) 	[ thread-roots-task 12830781239 12830789409 ]
+[12.840s][debug][gc,task,time   ] GC(5) 	[ thread-roots-task 12830789664 12830795294 ]
+[12.840s][debug][gc,task,time   ] GC(5) 	[ thread-roots-task 12830795570 12830798001 ]
+[12.840s][debug][gc,task,time   ] GC(5) 	[ thread-roots-task 12830798200 12830799234 ]
+[12.840s][debug][gc,task,time   ] GC(5) 	[ thread-roots-task 12830799563 12830800151 ]
+[12.840s][debug][gc,task,time   ] GC(5) 	[ thread-roots-task 12830800350 12830801271 ]
+[12.840s][debug][gc,task,time   ] GC(5) 	[ thread-roots-task 12830801470 12830868284 ]
+[12.840s][debug][gc,task,time   ] GC(5) 	[ thread-roots-task 12830868838 12830948040 ]
+[12.840s][debug][gc,task,time   ] GC(5) 	[ thread-roots-task 12830948438 12830949152 ]
+[12.840s][debug][gc,task,time   ] GC(5) 	[ thread-roots-task 12830949428 12830986485 ]
+[12.840s][debug][gc,task,time   ] GC(5) 	[ thread-roots-task 12830987152 12831245839 ]
+[12.841s][debug][gc,task,time   ] GC(5) 	[ thread-roots-task 12831246249 12831263216 ]
+[12.841s][debug][gc,task,time   ] GC(5) 	[ thread-roots-task 12831263524 12831268975 ]
+[12.841s][debug][gc,task,time   ] GC(5) 	[ thread-roots-task 12831269216 12831324199 ]
+[12.841s][debug][gc,task,time   ] GC(5) 	[ thread-roots-task 12831324508 12831325758 ]
+[12.841s][debug][gc,task,time   ] GC(5) 	[ scavenge-roots-task 12831326053 12831326794 ]
+[12.841s][debug][gc,task,time   ] GC(5) 	[ scavenge-roots-task 12831327112 12831329526 ]
+[12.841s][debug][gc,task,time   ] GC(5) 	[ scavenge-roots-task 12831329841 12831475416 ]
+[12.841s][debug][gc,task,time   ] GC(5) 	[ scavenge-roots-task 12831475718 12837643310 ]
+[12.841s][debug][gc,task,time   ] GC(5) 	[ steal-task 12837644470 12838612577 ]
+[12.841s][debug][gc,task,time   ] GC(5) 	[ waitfor-barrier-task 12838613503 12838630776 ]
+[14.013s][debug][gc,heap        ] GC(6) Heap before GC invocations=7 (full 0): PSYoungGen      total 148992K, used 137650K [0x00000007d5580000, 0x00000007df680000, 0x0000000800000000)
+[14.013s][debug][gc,heap        ] GC(6)   eden space 133120K, 99% used [0x00000007d5580000,0x00000007dd6e48c8,0x00000007dd780000)
+[14.013s][debug][gc,heap        ] GC(6)   from space 15872K, 32% used [0x00000007de700000,0x00000007dec08030,0x00000007df680000)
+[14.013s][debug][gc,heap        ] GC(6)   to   space 15872K, 0% used [0x00000007dd780000,0x00000007dd780000,0x00000007de700000)
+[14.013s][debug][gc,heap        ] GC(6)  ParOldGen       total 87552K, used 22208K [0x0000000780000000, 0x0000000785580000, 0x00000007d5580000)
+[14.013s][debug][gc,heap        ] GC(6)   object space 87552K, 25% used [0x0000000780000000,0x00000007815b0000,0x0000000785580000)
+[14.013s][debug][gc,heap        ] GC(6)  Metaspace       used 13027K, capacity 13409K, committed 13568K, reserved 1060864K
+[14.013s][debug][gc,heap        ] GC(6)   class space    used 1346K, capacity 1504K, committed 1536K, reserved 1048576K
+[14.013s][debug][gc,tlab        ] GC(6) TLAB totals: thrds: 4  refills: 50 max: 47 slow allocs: 14 max 14 waste:  1.7% gc: 2024000B max: 588448B slow: 76992B max: 76992B fast: 0B max: 0B
+[14.013s][info ][gc,start       ] GC(6) Pause Young (Allocation Failure)
+[14.014s][debug][gc,phases,start] GC(6) Scavenge
+[14.031s][debug][gc,phases      ] GC(6) Scavenge 17.163ms
+[14.031s][debug][gc,phases,start] GC(6) Reference Processing
+[14.031s][debug][gc,ref         ] GC(6) Skipped phase1 of Reference Processing due to unavailable references
+[14.031s][debug][gc,ref         ] GC(6) Skipped phase2 of Reference Processing due to unavailable references
+[14.031s][debug][gc,ref         ] GC(6) Skipped phase3 of Reference Processing due to unavailable references
+[14.031s][debug][gc,ref         ] GC(6) Skipped phase4 of Reference Processing due to unavailable references
+[14.031s][debug][gc,phases,ref  ] GC(6) Reference Processing: 0.0ms
+[14.031s][debug][gc,phases,ref  ] GC(6)   Reconsider SoftReferences: 0.0ms
+[14.031s][debug][gc,phases,ref  ] GC(6)     SoftRef: skipped
+[14.031s][debug][gc,phases,ref  ] GC(6)   Notify Soft/WeakReferences: 0.0ms
+[14.031s][debug][gc,phases,ref  ] GC(6)     SoftRef: skipped
+[14.031s][debug][gc,phases,ref  ] GC(6)     WeakRef: skipped
+[14.031s][debug][gc,phases,ref  ] GC(6)     FinalRef: skipped
+[14.031s][debug][gc,phases,ref  ] GC(6)     Total: skipped
+[14.031s][debug][gc,phases,ref  ] GC(6)   Notify and keep alive finalizable: 0.0ms
+[14.031s][debug][gc,phases,ref  ] GC(6)     FinalRef: skipped
+[14.031s][debug][gc,phases,ref  ] GC(6)   Notify PhantomReferences: 0.0ms
+[14.031s][debug][gc,phases,ref  ] GC(6)     PhantomRef: skipped
+[14.031s][debug][gc,phases,ref  ] GC(6)   SoftReference:
+[14.031s][debug][gc,phases,ref  ] GC(6)     Discovered: 0
+[14.031s][debug][gc,phases,ref  ] GC(6)     Cleared: 0
+[14.031s][debug][gc,phases,ref  ] GC(6)   WeakReference:
+[14.031s][debug][gc,phases,ref  ] GC(6)     Discovered: 0
+[14.031s][debug][gc,phases,ref  ] GC(6)     Cleared: 0
+[14.031s][debug][gc,phases,ref  ] GC(6)   FinalReference:
+[14.031s][debug][gc,phases,ref  ] GC(6)     Discovered: 0
+[14.031s][debug][gc,phases,ref  ] GC(6)     Cleared: 0
+[14.031s][debug][gc,phases,ref  ] GC(6)   PhantomReference:
+[14.031s][debug][gc,phases,ref  ] GC(6)     Discovered: 0
+[14.031s][debug][gc,phases,ref  ] GC(6)     Cleared: 0
+[14.031s][debug][gc,phases      ] GC(6) Reference Processing 0.324ms
+[14.031s][debug][gc,phases,start] GC(6) Weak Processing
+[14.031s][debug][gc,phases      ] GC(6) Weak Processing 0.091ms
+[14.031s][debug][gc,phases,start] GC(6) Scrub String Table
+[14.032s][debug][gc,phases      ] GC(6) Scrub String Table 0.352ms
+[14.032s][debug][gc,ergo        ] GC(6) AdaptiveSizeStart:  collection: 7 
+[14.032s][debug][gc,ergo        ] GC(6) avg_survived_padded_avg: 15822816.000000
+[14.032s][debug][gc,ergo        ] GC(6) avg_promoted_padded_avg: 9258416.000000  avg_pretenured_padded_avg: 0.000000  tenuring_thresh: 4  target_size: 16252928
+[14.032s][debug][gc,age         ] GC(6) Desired survivor size 16252928 bytes, new threshold 4 (max threshold 15)
+[14.032s][debug][gc,ergo        ] GC(6) PSAdaptiveSizePolicy::compute_eden_space_size: costs minor_time: 0.032658 major_cost: 0.000000 mutator_cost: 0.967342 throughput_goal: 0.990000
+[14.032s][debug][gc,ergo        ] GC(6) Live_space: 274384320 free_space: 170393600
+[14.032s][debug][gc,ergo        ] GC(6) Old eden_size: 136314880 desired_eden_size: 272629760
+[14.032s][debug][gc,ergo        ] GC(6) AdaptiveSizeStop: collection: 7 
+[14.032s][info ][gc,heap        ] GC(6) PSYoungGen: 137650K->10560K(148992K)
+[14.032s][info ][gc,heap        ] GC(6) ParOldGen: 22208K->24830K(87552K)
+[14.032s][info ][gc,metaspace   ] GC(6) Metaspace: 13027K->13027K(1060864K)
+[14.032s][info ][gc             ] GC(6) Pause Young (Allocation Failure) 156M->34M(231M) 18.753ms
+[14.032s][info ][gc,cpu         ] GC(6) User=0.06s Sys=0.01s Real=0.02s
+[14.032s][debug][gc,heap        ] GC(6) Heap after GC invocations=7 (full 0): PSYoungGen      total 148992K, used 10560K [0x00000007d5580000, 0x00000007e7880000, 0x0000000800000000)
+[14.032s][debug][gc,heap        ] GC(6)   eden space 133120K, 0% used [0x00000007d5580000,0x00000007d5580000,0x00000007dd780000)
+[14.032s][debug][gc,heap        ] GC(6)   from space 15872K, 66% used [0x00000007dd780000,0x00000007de1d0010,0x00000007de700000)
+[14.032s][debug][gc,heap        ] GC(6)   to   space 15872K, 0% used [0x00000007e6900000,0x00000007e6900000,0x00000007e7880000)
+[14.032s][debug][gc,heap        ] GC(6)  ParOldGen       total 87552K, used 24830K [0x0000000780000000, 0x0000000785580000, 0x00000007d5580000)
+[14.032s][debug][gc,heap        ] GC(6)   object space 87552K, 28% used [0x0000000780000000,0x000000078183fad0,0x0000000785580000)
+[14.032s][debug][gc,heap        ] GC(6)  Metaspace       used 13027K, capacity 13409K, committed 13568K, reserved 1060864K
+[14.032s][debug][gc,heap        ] GC(6)   class space    used 1346K, capacity 1504K, committed 1536K, reserved 1048576K
+[14.032s][debug][gc,task,time   ] GC(6) VM-Thread 14013097440 14030985421 14032372192
+[14.032s][debug][gc,task,time   ] GC(6) GC-Thread 0 entries: 22
+[14.032s][debug][gc,task,time   ] GC(6) 	[ old-to-young-roots-task 14013850015 14016225538 ]
+[14.032s][debug][gc,task,time   ] GC(6) 	[ thread-roots-task 14016226617 14016247759 ]
+[14.032s][debug][gc,task,time   ] GC(6) 	[ thread-roots-task 14016248038 14016255077 ]
+[14.032s][debug][gc,task,time   ] GC(6) 	[ thread-roots-task 14016255383 14016260962 ]
+[14.032s][debug][gc,task,time   ] GC(6) 	[ thread-roots-task 14016261157 14016262943 ]
+[14.032s][debug][gc,task,time   ] GC(6) 	[ thread-roots-task 14016263157 14016264029 ]
+[14.032s][debug][gc,task,time   ] GC(6) 	[ thread-roots-task 14016264210 14016264727 ]
+[14.032s][debug][gc,task,time   ] GC(6) 	[ thread-roots-task 14016264949 14016266068 ]
+[14.032s][debug][gc,task,time   ] GC(6) 	[ thread-roots-task 14016266265 14016277543 ]
+[14.032s][debug][gc,task,time   ] GC(6) 	[ thread-roots-task 14016277746 14016362943 ]
+[14.032s][debug][gc,task,time   ] GC(6) 	[ thread-roots-task 14016363338 14016363832 ]
+[14.032s][debug][gc,task,time   ] GC(6) 	[ thread-roots-task 14016364046 14016392237 ]
+[14.033s][debug][gc,task,time   ] GC(6) 	[ thread-roots-task 14016392437 14016465562 ]
+[14.033s][debug][gc,task,time   ] GC(6) 	[ thread-roots-task 14016465758 14016477338 ]
+[14.033s][debug][gc,task,time   ] GC(6) 	[ thread-roots-task 14016477621 14016481190 ]
+[14.033s][debug][gc,task,time   ] GC(6) 	[ thread-roots-task 14016481366 14016518669 ]
+[14.033s][debug][gc,task,time   ] GC(6) 	[ thread-roots-task 14016518849 14016520197 ]
+[14.033s][debug][gc,task,time   ] GC(6) 	[ scavenge-roots-task 14016520372 14016520895 ]
+[14.033s][debug][gc,task,time   ] GC(6) 	[ scavenge-roots-task 14016521096 14016523410 ]
+[14.033s][debug][gc,task,time   ] GC(6) 	[ scavenge-roots-task 14016523579 14016602359 ]
+[14.033s][debug][gc,task,time   ] GC(6) 	[ scavenge-roots-task 14016602562 14020819100 ]
+[14.033s][debug][gc,task,time   ] GC(6) 	[ steal-task 14020820197 14030857781 ]
+[14.033s][debug][gc,task,time   ] GC(6) GC-Thread 1 entries: 3
+[14.033s][debug][gc,task,time   ] GC(6) 	[ old-to-young-roots-task 14013928706 14015243645 ]
+[14.033s][debug][gc,task,time   ] GC(6) 	[ thread-roots-task 14015244612 14017239018 ]
+[14.033s][debug][gc,task,time   ] GC(6) 	[ steal-task 14017239931 14030857781 ]
+[14.033s][debug][gc,task,time   ] GC(6) GC-Thread 2 entries: 7
+[14.033s][debug][gc,task,time   ] GC(6) 	[ noop task 14013817701 14013819256 ]
+[14.033s][debug][gc,task,time   ] GC(6) 	[ old-to-young-roots-task 14013916630 14014062039 ]
+[14.033s][debug][gc,task,time   ] GC(6) 	[ scavenge-roots-task 14014063029 14016867141 ]
+[14.033s][debug][gc,task,time   ] GC(6) 	[ scavenge-roots-task 14016867989 14016870354 ]
+[14.033s][debug][gc,task,time   ] GC(6) 	[ scavenge-roots-task 14016870644 14017441560 ]
+[14.033s][debug][gc,task,time   ] GC(6) 	[ steal-task 14017441996 14030857731 ]
+[14.033s][debug][gc,task,time   ] GC(6) 	[ waitfor-barrier-task 14030859061 14030873709 ]
+[14.033s][debug][gc,task,time   ] GC(6) GC-Thread 3 entries: 4
+[14.033s][debug][gc,task,time   ] GC(6) 	[ old-to-young-roots-task 14013941535 14014083092 ]
+[14.033s][debug][gc,task,time   ] GC(6) 	[ scavenge-roots-task 14014091874 14017035806 ]
+[14.033s][debug][gc,task,time   ] GC(6) 	[ scavenge-roots-task 14017036367 14017037138 ]
+[14.033s][debug][gc,task,time   ] GC(6) 	[ steal-task 14017037343 14030857731 ]
+[15.281s][debug][gc,heap        ] GC(7) Heap before GC invocations=8 (full 0): PSYoungGen      total 148992K, used 143680K [0x00000007d5580000, 0x00000007e7880000, 0x0000000800000000)
+[15.281s][debug][gc,heap        ] GC(7)   eden space 133120K, 100% used [0x00000007d5580000,0x00000007dd780000,0x00000007dd780000)
+[15.281s][debug][gc,heap        ] GC(7)   from space 15872K, 66% used [0x00000007dd780000,0x00000007de1d0010,0x00000007de700000)
+[15.281s][debug][gc,heap        ] GC(7)   to   space 15872K, 0% used [0x00000007e6900000,0x00000007e6900000,0x00000007e7880000)
+[15.281s][debug][gc,heap        ] GC(7)  ParOldGen       total 87552K, used 24830K [0x0000000780000000, 0x0000000785580000, 0x00000007d5580000)
+[15.281s][debug][gc,heap        ] GC(7)   object space 87552K, 28% used [0x0000000780000000,0x000000078183fad0,0x0000000785580000)
+[15.281s][debug][gc,heap        ] GC(7)  Metaspace       used 13052K, capacity 13479K, committed 13568K, reserved 1060864K
+[15.281s][debug][gc,heap        ] GC(7)   class space    used 1347K, capacity 1505K, committed 1536K, reserved 1048576K
+[15.281s][debug][gc,tlab        ] GC(7) TLAB totals: thrds: 5  refills: 51 max: 47 slow allocs: 16 max 16 waste:  1.3% gc: 1603320B max: 575192B slow: 68504B max: 68504B fast: 0B max: 0B
+[15.281s][info ][gc,start       ] GC(7) Pause Young (Allocation Failure)
+[15.281s][debug][gc,phases,start] GC(7) Scavenge
+[15.292s][debug][gc,phases      ] GC(7) Scavenge 11.416ms
+[15.292s][debug][gc,phases,start] GC(7) Reference Processing
+[15.293s][debug][gc,ref         ] GC(7) Skipped phase1 of Reference Processing due to unavailable references
+[15.293s][debug][gc,ref         ] GC(7) Skipped phase2 of Reference Processing due to unavailable references
+[15.293s][debug][gc,ref         ] GC(7) Skipped phase3 of Reference Processing due to unavailable references
+[15.293s][debug][gc,ref         ] GC(7) Skipped phase4 of Reference Processing due to unavailable references
+[15.293s][debug][gc,phases,ref  ] GC(7) Reference Processing: 0.0ms
+[15.293s][debug][gc,phases,ref  ] GC(7)   Reconsider SoftReferences: 0.0ms
+[15.293s][debug][gc,phases,ref  ] GC(7)     SoftRef: skipped
+[15.293s][debug][gc,phases,ref  ] GC(7)   Notify Soft/WeakReferences: 0.0ms
+[15.293s][debug][gc,phases,ref  ] GC(7)     SoftRef: skipped
+[15.293s][debug][gc,phases,ref  ] GC(7)     WeakRef: skipped
+[15.293s][debug][gc,phases,ref  ] GC(7)     FinalRef: skipped
+[15.293s][debug][gc,phases,ref  ] GC(7)     Total: skipped
+[15.293s][debug][gc,phases,ref  ] GC(7)   Notify and keep alive finalizable: 0.0ms
+[15.293s][debug][gc,phases,ref  ] GC(7)     FinalRef: skipped
+[15.293s][debug][gc,phases,ref  ] GC(7)   Notify PhantomReferences: 0.0ms
+[15.293s][debug][gc,phases,ref  ] GC(7)     PhantomRef: skipped
+[15.293s][debug][gc,phases,ref  ] GC(7)   SoftReference:
+[15.293s][debug][gc,phases,ref  ] GC(7)     Discovered: 0
+[15.293s][debug][gc,phases,ref  ] GC(7)     Cleared: 0
+[15.293s][debug][gc,phases,ref  ] GC(7)   WeakReference:
+[15.293s][debug][gc,phases,ref  ] GC(7)     Discovered: 0
+[15.293s][debug][gc,phases,ref  ] GC(7)     Cleared: 0
+[15.293s][debug][gc,phases,ref  ] GC(7)   FinalReference:
+[15.293s][debug][gc,phases,ref  ] GC(7)     Discovered: 0
+[15.293s][debug][gc,phases,ref  ] GC(7)     Cleared: 0
+[15.293s][debug][gc,phases,ref  ] GC(7)   PhantomReference:
+[15.293s][debug][gc,phases,ref  ] GC(7)     Discovered: 0
+[15.293s][debug][gc,phases,ref  ] GC(7)     Cleared: 0
+[15.293s][debug][gc,phases      ] GC(7) Reference Processing 0.353ms
+[15.293s][debug][gc,phases,start] GC(7) Weak Processing
+[15.293s][debug][gc,phases      ] GC(7) Weak Processing 0.024ms
+[15.293s][debug][gc,phases,start] GC(7) Scrub String Table
+[15.293s][debug][gc,phases      ] GC(7) Scrub String Table 0.088ms
+[15.293s][debug][gc,ergo        ] GC(7) AdaptiveSizeStart:  collection: 8 
+[15.293s][debug][gc,ergo        ] GC(7) avg_survived_padded_avg: 15272576.000000
+[15.293s][debug][gc,ergo        ] GC(7) avg_promoted_padded_avg: 9297826.000000  avg_pretenured_padded_avg: 0.000000  tenuring_thresh: 3  target_size: 15728640
+[15.293s][debug][gc,age         ] GC(7) Desired survivor size 15728640 bytes, new threshold 3 (max threshold 15)
+[15.293s][debug][gc,ergo        ] GC(7) PSAdaptiveSizePolicy::compute_eden_space_size: costs minor_time: 0.026876 major_cost: 0.000000 mutator_cost: 0.973124 throughput_goal: 0.990000
+[15.293s][debug][gc,ergo        ] GC(7) Live_space: 274629888 free_space: 306708480
+[15.293s][debug][gc,ergo        ] GC(7) Old eden_size: 272629760 desired_eden_size: 272629760
+[15.293s][debug][gc,ergo        ] GC(7) AdaptiveSizeStop: collection: 8 
+[15.293s][info ][gc,heap        ] GC(7) PSYoungGen: 143680K->7808K(281088K)
+[15.293s][info ][gc,heap        ] GC(7) ParOldGen: 24830K->24862K(87552K)
+[15.293s][info ][gc,metaspace   ] GC(7) Metaspace: 13052K->13052K(1060864K)
+[15.293s][info ][gc             ] GC(7) Pause Young (Allocation Failure) 164M->31M(360M) 12.226ms
+[15.293s][info ][gc,cpu         ] GC(7) User=0.03s Sys=0.01s Real=0.01s
+[15.293s][debug][gc,heap        ] GC(7) Heap after GC invocations=8 (full 0): PSYoungGen      total 281088K, used 7808K [0x00000007d5580000, 0x00000007e7780000, 0x0000000800000000)
+[15.293s][debug][gc,heap        ] GC(7)   eden space 266240K, 0% used [0x00000007d5580000,0x00000007d5580000,0x00000007e5980000)
+[15.293s][debug][gc,heap        ] GC(7)   from space 14848K, 52% used [0x00000007e6900000,0x00000007e70a0010,0x00000007e7780000)
+[15.293s][debug][gc,heap        ] GC(7)   to   space 15360K, 0% used [0x00000007e5980000,0x00000007e5980000,0x00000007e6880000)
+[15.293s][debug][gc,heap        ] GC(7)  ParOldGen       total 87552K, used 24862K [0x0000000780000000, 0x0000000785580000, 0x00000007d5580000)
+[15.293s][debug][gc,heap        ] GC(7)   object space 87552K, 28% used [0x0000000780000000,0x0000000781847ad0,0x0000000785580000)
+[15.293s][debug][gc,heap        ] GC(7)  Metaspace       used 13052K, capacity 13479K, committed 13568K, reserved 1060864K
+[15.293s][debug][gc,heap        ] GC(7)   class space    used 1347K, capacity 1505K, committed 1536K, reserved 1048576K
+[15.293s][debug][gc,task,time   ] GC(7) VM-Thread 15280678082 15292471136 15293301268
+[15.293s][debug][gc,task,time   ] GC(7) GC-Thread 0 entries: 11
+[15.293s][debug][gc,task,time   ] GC(7) 	[ old-to-young-roots-task 15281064190 15281147253 ]
+[15.293s][debug][gc,task,time   ] GC(7) 	[ thread-roots-task 15281148434 15281149963 ]
+[15.293s][debug][gc,task,time   ] GC(7) 	[ thread-roots-task 15281150292 15281151598 ]
+[15.293s][debug][gc,task,time   ] GC(7) 	[ thread-roots-task 15281151888 15281152751 ]
+[15.293s][debug][gc,task,time   ] GC(7) 	[ thread-roots-task 15281153101 15281153721 ]
+[15.293s][debug][gc,task,time   ] GC(7) 	[ thread-roots-task 15281153959 15281154801 ]
+[15.293s][debug][gc,task,time   ] GC(7) 	[ thread-roots-task 15281155062 15281168091 ]
+[15.293s][debug][gc,task,time   ] GC(7) 	[ thread-roots-task 15281168659 15281181645 ]
+[15.293s][debug][gc,task,time   ] GC(7) 	[ scavenge-roots-task 15281181846 15281189372 ]
+[15.293s][debug][gc,task,time   ] GC(7) 	[ scavenge-roots-task 15281189628 15281191770 ]
+[15.293s][debug][gc,task,time   ] GC(7) 	[ steal-task 15281192497 15292350926 ]
+[15.293s][debug][gc,task,time   ] GC(7) GC-Thread 1 entries: 6
+[15.293s][debug][gc,task,time   ] GC(7) 	[ old-to-young-roots-task 15281049377 15281146075 ]
+[15.293s][debug][gc,task,time   ] GC(7) 	[ thread-roots-task 15281147508 15281160971 ]
+[15.293s][debug][gc,task,time   ] GC(7) 	[ thread-roots-task 15281161631 15281162437 ]
+[15.293s][debug][gc,task,time   ] GC(7) 	[ thread-roots-task 15281162729 15281189898 ]
+[15.293s][debug][gc,task,time   ] GC(7) 	[ scavenge-roots-task 15281190770 15281191888 ]
+[15.294s][debug][gc,task,time   ] GC(7) 	[ steal-task 15281192997 15292350971 ]
+[15.294s][debug][gc,task,time   ] GC(7) GC-Thread 2 entries: 11
+[15.294s][debug][gc,task,time   ] GC(7) 	[ old-to-young-roots-task 15281001280 15281118657 ]
+[15.294s][debug][gc,task,time   ] GC(7) 	[ scavenge-roots-task 15281119744 15281121725 ]
+[15.294s][debug][gc,task,time   ] GC(7) 	[ scavenge-roots-task 15281122058 15281123404 ]
+[15.294s][debug][gc,task,time   ] GC(7) 	[ thread-roots-task 15281123873 15281159072 ]
+[15.294s][debug][gc,task,time   ] GC(7) 	[ thread-roots-task 15281159362 15281173763 ]
+[15.294s][debug][gc,task,time   ] GC(7) 	[ thread-roots-task 15281174018 15281178150 ]
+[15.294s][debug][gc,task,time   ] GC(7) 	[ thread-roots-task 15281178629 15281179420 ]
+[15.294s][debug][gc,task,time   ] GC(7) 	[ scavenge-roots-task 15281179632 15281180227 ]
+[15.294s][debug][gc,task,time   ] GC(7) 	[ scavenge-roots-task 15281180435 15281182141 ]
+[15.294s][debug][gc,task,time   ] GC(7) 	[ scavenge-roots-task 15281182344 15281243494 ]
+[15.294s][debug][gc,task,time   ] GC(7) 	[ steal-task 15281243981 15292350971 ]
+[15.294s][debug][gc,task,time   ] GC(7) GC-Thread 3 entries: 7
+[15.294s][debug][gc,task,time   ] GC(7) 	[ old-to-young-roots-task 15281030997 15281134869 ]
+[15.294s][debug][gc,task,time   ] GC(7) 	[ thread-roots-task 15281136509 15281160971 ]
+[15.294s][debug][gc,task,time   ] GC(7) 	[ thread-roots-task 15281162119 15281175596 ]
+[15.294s][debug][gc,task,time   ] GC(7) 	[ thread-roots-task 15281176070 15281189898 ]
+[15.294s][debug][gc,task,time   ] GC(7) 	[ scavenge-roots-task 15281190518 15281248223 ]
+[15.294s][debug][gc,task,time   ] GC(7) 	[ steal-task 15281248741 15292350926 ]
+[15.294s][debug][gc,task,time   ] GC(7) 	[ waitfor-barrier-task 15292352294 15292393775 ]
+[17.894s][debug][gc,heap        ] GC(8) Heap before GC invocations=9 (full 0): PSYoungGen      total 281088K, used 274048K [0x00000007d5580000, 0x00000007e7780000, 0x0000000800000000)
+[17.894s][debug][gc,heap        ] GC(8)   eden space 266240K, 100% used [0x00000007d5580000,0x00000007e5980000,0x00000007e5980000)
+[17.894s][debug][gc,heap        ] GC(8)   from space 14848K, 52% used [0x00000007e6900000,0x00000007e70a0010,0x00000007e7780000)
+[17.894s][debug][gc,heap        ] GC(8)   to   space 15360K, 0% used [0x00000007e5980000,0x00000007e5980000,0x00000007e6880000)
+[17.894s][debug][gc,heap        ] GC(8)  ParOldGen       total 87552K, used 24862K [0x0000000780000000, 0x0000000785580000, 0x00000007d5580000)
+[17.894s][debug][gc,heap        ] GC(8)   object space 87552K, 28% used [0x0000000780000000,0x0000000781847ad0,0x0000000785580000)
+[17.894s][debug][gc,heap        ] GC(8)  Metaspace       used 13083K, capacity 13479K, committed 13568K, reserved 1060864K
+[17.894s][debug][gc,heap        ] GC(8)   class space    used 1347K, capacity 1505K, committed 1536K, reserved 1048576K
+[17.894s][debug][gc,tlab        ] GC(8) TLAB totals: thrds: 5  refills: 54 max: 50 slow allocs: 11 max 11 waste:  0.7% gc: 1914280B max: 747712B slow: 29432B max: 29432B fast: 0B max: 0B
+[17.894s][info ][gc,start       ] GC(8) Pause Young (Allocation Failure)
+[17.895s][debug][gc,phases,start] GC(8) Scavenge
+[17.902s][debug][gc,phases      ] GC(8) Scavenge 7.285ms
+[17.902s][debug][gc,phases,start] GC(8) Reference Processing
+[17.902s][debug][gc,ref         ] GC(8) Skipped phase1 of Reference Processing due to unavailable references
+[17.902s][debug][gc,ref         ] GC(8) Skipped phase2 of Reference Processing due to unavailable references
+[17.902s][debug][gc,ref         ] GC(8) Skipped phase3 of Reference Processing due to unavailable references
+[17.902s][debug][gc,ref         ] GC(8) Skipped phase4 of Reference Processing due to unavailable references
+[17.902s][debug][gc,phases,ref  ] GC(8) Reference Processing: 0.1ms
+[17.902s][debug][gc,phases,ref  ] GC(8)   Reconsider SoftReferences: 0.0ms
+[17.902s][debug][gc,phases,ref  ] GC(8)     SoftRef: skipped
+[17.902s][debug][gc,phases,ref  ] GC(8)   Notify Soft/WeakReferences: 0.0ms
+[17.902s][debug][gc,phases,ref  ] GC(8)     SoftRef: skipped
+[17.902s][debug][gc,phases,ref  ] GC(8)     WeakRef: skipped
+[17.902s][debug][gc,phases,ref  ] GC(8)     FinalRef: skipped
+[17.902s][debug][gc,phases,ref  ] GC(8)     Total: skipped
+[17.902s][debug][gc,phases,ref  ] GC(8)   Notify and keep alive finalizable: 0.0ms
+[17.902s][debug][gc,phases,ref  ] GC(8)     FinalRef: skipped
+[17.902s][debug][gc,phases,ref  ] GC(8)   Notify PhantomReferences: 0.0ms
+[17.902s][debug][gc,phases,ref  ] GC(8)     PhantomRef: skipped
+[17.902s][debug][gc,phases,ref  ] GC(8)   SoftReference:
+[17.902s][debug][gc,phases,ref  ] GC(8)     Discovered: 0
+[17.902s][debug][gc,phases,ref  ] GC(8)     Cleared: 0
+[17.902s][debug][gc,phases,ref  ] GC(8)   WeakReference:
+[17.902s][debug][gc,phases,ref  ] GC(8)     Discovered: 0
+[17.902s][debug][gc,phases,ref  ] GC(8)     Cleared: 0
+[17.902s][debug][gc,phases,ref  ] GC(8)   FinalReference:
+[17.902s][debug][gc,phases,ref  ] GC(8)     Discovered: 0
+[17.902s][debug][gc,phases,ref  ] GC(8)     Cleared: 0
+[17.902s][debug][gc,phases,ref  ] GC(8)   PhantomReference:
+[17.902s][debug][gc,phases,ref  ] GC(8)     Discovered: 0
+[17.902s][debug][gc,phases,ref  ] GC(8)     Cleared: 0
+[17.902s][debug][gc,phases      ] GC(8) Reference Processing 0.405ms
+[17.902s][debug][gc,phases,start] GC(8) Weak Processing
+[17.902s][debug][gc,phases      ] GC(8) Weak Processing 0.027ms
+[17.902s][debug][gc,phases,start] GC(8) Scrub String Table
+[17.902s][debug][gc,phases      ] GC(8) Scrub String Table 0.106ms
+[17.902s][debug][gc,ergo        ] GC(8) AdaptiveSizeStart:  collection: 9 
+[17.902s][debug][gc,ergo        ] GC(8) avg_survived_padded_avg: 15499784.000000
+[17.903s][debug][gc,ergo        ] GC(8) avg_promoted_padded_avg: 9215516.000000  avg_pretenured_padded_avg: 0.000000  tenuring_thresh: 2  target_size: 15728640
+[17.903s][debug][gc,age         ] GC(8) Desired survivor size 15728640 bytes, new threshold 2 (max threshold 15)
+[17.903s][debug][gc,ergo        ] GC(8) PSAdaptiveSizePolicy::compute_eden_space_size: costs minor_time: 0.020921 major_cost: 0.000000 mutator_cost: 0.979079 throughput_goal: 0.990000
+[17.903s][debug][gc,ergo        ] GC(8) Live_space: 274402688 free_space: 306708480
+[17.903s][debug][gc,ergo        ] GC(8) Old eden_size: 272629760 desired_eden_size: 436207616
+[17.903s][debug][gc,ergo        ] GC(8) AdaptiveSizeStop: collection: 9 
+[17.903s][info ][gc,heap        ] GC(8) PSYoungGen: 274048K->4032K(281600K)
+[17.903s][info ][gc,heap        ] GC(8) ParOldGen: 24862K->24886K(87552K)
+[17.903s][info ][gc,metaspace   ] GC(8) Metaspace: 13083K->13083K(1060864K)
+[17.903s][info ][gc             ] GC(8) Pause Young (Allocation Failure) 291M->28M(360M) 8.522ms
+[17.903s][info ][gc,cpu         ] GC(8) User=0.02s Sys=0.00s Real=0.00s
+[17.903s][debug][gc,heap        ] GC(8) Heap after GC invocations=9 (full 0): PSYoungGen      total 281600K, used 4032K [0x00000007d5580000, 0x00000007f1380000, 0x0000000800000000)
+[17.903s][debug][gc,heap        ] GC(8)   eden space 266240K, 0% used [0x00000007d5580000,0x00000007d5580000,0x00000007e5980000)
+[17.903s][debug][gc,heap        ] GC(8)   from space 15360K, 26% used [0x00000007e5980000,0x00000007e5d70020,0x00000007e6880000)
+[17.903s][debug][gc,heap        ] GC(8)   to   space 15360K, 0% used [0x00000007f0480000,0x00000007f0480000,0x00000007f1380000)
+[17.903s][debug][gc,heap        ] GC(8)  ParOldGen       total 87552K, used 24886K [0x0000000780000000, 0x0000000785580000, 0x00000007d5580000)
+[17.903s][debug][gc,heap        ] GC(8)   object space 87552K, 28% used [0x0000000780000000,0x000000078184dad0,0x0000000785580000)
+[17.903s][debug][gc,heap        ] GC(8)  Metaspace       used 13083K, capacity 13479K, committed 13568K, reserved 1060864K
+[17.903s][debug][gc,heap        ] GC(8)   class space    used 1347K, capacity 1505K, committed 1536K, reserved 1048576K
+[17.903s][debug][gc,task,time   ] GC(8) VM-Thread 17894175277 17901890878 17903192160
+[17.903s][debug][gc,task,time   ] GC(8) GC-Thread 0 entries: 11
+[17.903s][debug][gc,task,time   ] GC(8) 	[ old-to-young-roots-task 17894627780 17894712169 ]
+[17.903s][debug][gc,task,time   ] GC(8) 	[ thread-roots-task 17894713620 17894714971 ]
+[17.903s][debug][gc,task,time   ] GC(8) 	[ thread-roots-task 17894715254 17894729330 ]
+[17.903s][debug][gc,task,time   ] GC(8) 	[ thread-roots-task 17894729615 17894743981 ]
+[17.903s][debug][gc,task,time   ] GC(8) 	[ thread-roots-task 17894744580 17894745601 ]
+[17.903s][debug][gc,task,time   ] GC(8) 	[ scavenge-roots-task 17894745843 17894746507 ]
+[17.903s][debug][gc,task,time   ] GC(8) 	[ scavenge-roots-task 17894746794 17894748510 ]
+[17.903s][debug][gc,task,time   ] GC(8) 	[ scavenge-roots-task 17894748780 17894757035 ]
+[17.903s][debug][gc,task,time   ] GC(8) 	[ scavenge-roots-task 17894757297 17894759834 ]
+[17.903s][debug][gc,task,time   ] GC(8) 	[ scavenge-roots-task 17894760121 17894854089 ]
+[17.903s][debug][gc,task,time   ] GC(8) 	[ steal-task 17894854365 17901745575 ]
+[17.903s][debug][gc,task,time   ] GC(8) GC-Thread 1 entries: 8
+[17.903s][debug][gc,task,time   ] GC(8) 	[ old-to-young-roots-task 17894611153 17894705912 ]
+[17.903s][debug][gc,task,time   ] GC(8) 	[ thread-roots-task 17894707435 17894709629 ]
+[17.903s][debug][gc,task,time   ] GC(8) 	[ thread-roots-task 17894710537 17894711853 ]
+[17.903s][debug][gc,task,time   ] GC(8) 	[ thread-roots-task 17894712686 17894734275 ]
+[17.903s][debug][gc,task,time   ] GC(8) 	[ thread-roots-task 17894734884 17894740596 ]
+[17.903s][debug][gc,task,time   ] GC(8) 	[ thread-roots-task 17894740898 17894763110 ]
+[17.903s][debug][gc,task,time   ] GC(8) 	[ scavenge-roots-task 17894763674 17894764645 ]
+[17.903s][debug][gc,task,time   ] GC(8) 	[ steal-task 17894764937 17901745355 ]
+[17.903s][debug][gc,task,time   ] GC(8) GC-Thread 2 entries: 11
+[17.903s][debug][gc,task,time   ] GC(8) 	[ old-to-young-roots-task 17894586356 17894671503 ]
+[17.903s][debug][gc,task,time   ] GC(8) 	[ thread-roots-task 17894673955 17894689559 ]
+[17.904s][debug][gc,task,time   ] GC(8) 	[ thread-roots-task 17894690013 17894705157 ]
+[17.904s][debug][gc,task,time   ] GC(8) 	[ thread-roots-task 17894705398 17894706306 ]
+[17.904s][debug][gc,task,time   ] GC(8) 	[ thread-roots-task 17894706810 17894708618 ]
+[17.904s][debug][gc,task,time   ] GC(8) 	[ thread-roots-task 17894709284 17894710685 ]
+[17.904s][debug][gc,task,time   ] GC(8) 	[ thread-roots-task 17894711379 17894720960 ]
+[17.904s][debug][gc,task,time   ] GC(8) 	[ thread-roots-task 17894721230 17894751789 ]
+[17.904s][debug][gc,task,time   ] GC(8) 	[ scavenge-roots-task 17894752087 17894832518 ]
+[17.904s][debug][gc,task,time   ] GC(8) 	[ steal-task 17894833070 17901745575 ]
+[17.904s][debug][gc,task,time   ] GC(8) 	[ waitfor-barrier-task 17901746540 17901764252 ]
+[17.904s][debug][gc,task,time   ] GC(8) GC-Thread 3 entries: 5
+[17.904s][debug][gc,task,time   ] GC(8) 	[ old-to-young-roots-task 17894551289 17894664577 ]
+[17.904s][debug][gc,task,time   ] GC(8) 	[ scavenge-roots-task 17894666468 17894668713 ]
+[17.904s][debug][gc,task,time   ] GC(8) 	[ scavenge-roots-task 17894669085 17894670952 ]
+[17.904s][debug][gc,task,time   ] GC(8) 	[ thread-roots-task 17894671707 17895187353 ]
+[17.904s][debug][gc,task,time   ] GC(8) 	[ steal-task 17895188549 17901745355 ]
+[20.370s][debug][gc,heap        ] GC(9) Heap before GC invocations=10 (full 0): PSYoungGen      total 281600K, used 270272K [0x00000007d5580000, 0x00000007f1380000, 0x0000000800000000)
+[20.370s][debug][gc,heap        ] GC(9)   eden space 266240K, 100% used [0x00000007d5580000,0x00000007e5980000,0x00000007e5980000)
+[20.370s][debug][gc,heap        ] GC(9)   from space 15360K, 26% used [0x00000007e5980000,0x00000007e5d70020,0x00000007e6880000)
+[20.370s][debug][gc,heap        ] GC(9)   to   space 15360K, 0% used [0x00000007f0480000,0x00000007f0480000,0x00000007f1380000)
+[20.370s][debug][gc,heap        ] GC(9)  ParOldGen       total 87552K, used 24886K [0x0000000780000000, 0x0000000785580000, 0x00000007d5580000)
+[20.370s][debug][gc,heap        ] GC(9)   object space 87552K, 28% used [0x0000000780000000,0x000000078184dad0,0x0000000785580000)
+[20.370s][debug][gc,heap        ] GC(9)  Metaspace       used 13126K, capacity 13558K, committed 13824K, reserved 1060864K
+[20.370s][debug][gc,heap        ] GC(9)   class space    used 1348K, capacity 1507K, committed 1536K, reserved 1048576K
+[20.370s][debug][gc,tlab        ] GC(9) TLAB totals: thrds: 5  refills: 55 max: 51 slow allocs: 3 max 3 waste:  0.4% gc: 1094048B max: 486352B slow: 41744B max: 41744B fast: 0B max: 0B
+[20.370s][info ][gc,start       ] GC(9) Pause Young (Allocation Failure)
+[20.370s][debug][gc,phases,start] GC(9) Scavenge
+[20.371s][debug][gc,phases      ] GC(9) Scavenge 1.119ms
+[20.371s][debug][gc,phases,start] GC(9) Reference Processing
+[20.371s][debug][gc,ref         ] GC(9) Skipped phase1 of Reference Processing due to unavailable references
+[20.371s][debug][gc,ref         ] GC(9) Skipped phase2 of Reference Processing due to unavailable references
+[20.371s][debug][gc,ref         ] GC(9) Skipped phase3 of Reference Processing due to unavailable references
+[20.371s][debug][gc,ref         ] GC(9) Skipped phase4 of Reference Processing due to unavailable references
+[20.371s][debug][gc,phases,ref  ] GC(9) Reference Processing: 0.1ms
+[20.371s][debug][gc,phases,ref  ] GC(9)   Reconsider SoftReferences: 0.0ms
+[20.372s][debug][gc,phases,ref  ] GC(9)     SoftRef: skipped
+[20.372s][debug][gc,phases,ref  ] GC(9)   Notify Soft/WeakReferences: 0.0ms
+[20.372s][debug][gc,phases,ref  ] GC(9)     SoftRef: skipped
+[20.372s][debug][gc,phases,ref  ] GC(9)     WeakRef: skipped
+[20.372s][debug][gc,phases,ref  ] GC(9)     FinalRef: skipped
+[20.372s][debug][gc,phases,ref  ] GC(9)     Total: skipped
+[20.372s][debug][gc,phases,ref  ] GC(9)   Notify and keep alive finalizable: 0.0ms
+[20.372s][debug][gc,phases,ref  ] GC(9)     FinalRef: skipped
+[20.372s][debug][gc,phases,ref  ] GC(9)   Notify PhantomReferences: 0.0ms
+[20.372s][debug][gc,phases,ref  ] GC(9)     PhantomRef: skipped
+[20.372s][debug][gc,phases,ref  ] GC(9)   SoftReference:
+[20.372s][debug][gc,phases,ref  ] GC(9)     Discovered: 0
+[20.372s][debug][gc,phases,ref  ] GC(9)     Cleared: 0
+[20.372s][debug][gc,phases,ref  ] GC(9)   WeakReference:
+[20.372s][debug][gc,phases,ref  ] GC(9)     Discovered: 0
+[20.372s][debug][gc,phases,ref  ] GC(9)     Cleared: 0
+[20.372s][debug][gc,phases,ref  ] GC(9)   FinalReference:
+[20.372s][debug][gc,phases,ref  ] GC(9)     Discovered: 0
+[20.372s][debug][gc,phases,ref  ] GC(9)     Cleared: 0
+[20.372s][debug][gc,phases,ref  ] GC(9)   PhantomReference:
+[20.372s][debug][gc,phases,ref  ] GC(9)     Discovered: 0
+[20.372s][debug][gc,phases,ref  ] GC(9)     Cleared: 0
+[20.372s][debug][gc,phases      ] GC(9) Reference Processing 0.456ms
+[20.372s][debug][gc,phases,start] GC(9) Weak Processing
+[20.372s][debug][gc,phases      ] GC(9) Weak Processing 0.029ms
+[20.372s][debug][gc,phases,start] GC(9) Scrub String Table
+[20.372s][debug][gc,phases      ] GC(9) Scrub String Table 0.124ms
+[20.372s][debug][gc,ergo        ] GC(9) AdaptiveSizeStart:  collection: 10 
+[20.372s][debug][gc,ergo        ] GC(9) avg_survived_padded_avg: 16158716.000000
+[20.372s][debug][gc,ergo        ] GC(9) avg_promoted_padded_avg: 9062277.000000  avg_pretenured_padded_avg: 0.000000  tenuring_thresh: 1  target_size: 16252928
+[20.372s][debug][gc,age         ] GC(9) Desired survivor size 16252928 bytes, new threshold 1 (max threshold 15)
+[20.372s][debug][gc,ergo        ] GC(9) PSAdaptiveSizePolicy::compute_eden_space_size: costs minor_time: 0.015880 major_cost: 0.000000 mutator_cost: 0.984120 throughput_goal: 0.990000
+[20.372s][debug][gc,ergo        ] GC(9) Live_space: 273861664 free_space: 470286336
+[20.372s][debug][gc,ergo        ] GC(9) Old eden_size: 436207616 desired_eden_size: 436207616
+[20.372s][debug][gc,ergo        ] GC(9) AdaptiveSizeStop: collection: 10 
+[20.372s][info ][gc,heap        ] GC(9) PSYoungGen: 270272K->544K(440832K)
+[20.372s][info ][gc,heap        ] GC(9) ParOldGen: 24886K->24918K(87552K)
+[20.372s][info ][gc,metaspace   ] GC(9) Metaspace: 13126K->13126K(1060864K)
+[20.372s][info ][gc             ] GC(9) Pause Young (Allocation Failure) 288M->24M(516M) 2.135ms
+[20.372s][info ][gc,cpu         ] GC(9) User=0.00s Sys=0.00s Real=0.00s
+[20.372s][debug][gc,heap        ] GC(9) Heap after GC invocations=10 (full 0): PSYoungGen      total 440832K, used 544K [0x00000007d5580000, 0x00000007f1480000, 0x0000000800000000)
+[20.372s][debug][gc,heap        ] GC(9)   eden space 425472K, 0% used [0x00000007d5580000,0x00000007d5580000,0x00000007ef500000)
+[20.372s][debug][gc,heap        ] GC(9)   from space 15360K, 3% used [0x00000007f0480000,0x00000007f0508010,0x00000007f1380000)
+[20.372s][debug][gc,heap        ] GC(9)   to   space 15872K, 0% used [0x00000007ef500000,0x00000007ef500000,0x00000007f0480000)
+[20.372s][debug][gc,heap        ] GC(9)  ParOldGen       total 87552K, used 24918K [0x0000000780000000, 0x0000000785580000, 0x00000007d5580000)
+[20.372s][debug][gc,heap        ] GC(9)   object space 87552K, 28% used [0x0000000780000000,0x0000000781855ad0,0x0000000785580000)
+[20.372s][debug][gc,heap        ] GC(9)  Metaspace       used 13126K, capacity 13558K, committed 13824K, reserved 1060864K
+[20.372s][debug][gc,heap        ] GC(9)   class space    used 1348K, capacity 1507K, committed 1536K, reserved 1048576K
+[20.373s][debug][gc,task,time   ] GC(9) VM-Thread 20369853632 20371378632 20372524670
+[20.373s][debug][gc,task,time   ] GC(9) GC-Thread 0 entries: 8
+[20.373s][debug][gc,task,time   ] GC(9) 	[ old-to-young-roots-task 20370255539 20370352591 ]
+[20.373s][debug][gc,task,time   ] GC(9) 	[ thread-roots-task 20370354705 20370397705 ]
+[20.373s][debug][gc,task,time   ] GC(9) 	[ thread-roots-task 20370398346 20370405087 ]
+[20.373s][debug][gc,task,time   ] GC(9) 	[ thread-roots-task 20370405415 20370406549 ]
+[20.373s][debug][gc,task,time   ] GC(9) 	[ scavenge-roots-task 20370406875 20370407587 ]
+[20.373s][debug][gc,task,time   ] GC(9) 	[ scavenge-roots-task 20370407877 20370410773 ]
+[20.373s][debug][gc,task,time   ] GC(9) 	[ scavenge-roots-task 20370411774 20370477533 ]
+[20.373s][debug][gc,task,time   ] GC(9) 	[ steal-task 20370477896 20371276936 ]
+[20.373s][debug][gc,task,time   ] GC(9) GC-Thread 1 entries: 5
+[20.373s][debug][gc,task,time   ] GC(9) 	[ old-to-young-roots-task 20370302483 20370379961 ]
+[20.373s][debug][gc,task,time   ] GC(9) 	[ thread-roots-task 20370381400 20370383422 ]
+[20.373s][debug][gc,task,time   ] GC(9) 	[ thread-roots-task 20370383809 20370400450 ]
+[20.373s][debug][gc,task,time   ] GC(9) 	[ thread-roots-task 20370400773 20370421561 ]
+[20.373s][debug][gc,task,time   ] GC(9) 	[ steal-task 20370422457 20371248410 ]
+[20.373s][debug][gc,task,time   ] GC(9) GC-Thread 2 entries: 12
+[20.373s][debug][gc,task,time   ] GC(9) 	[ old-to-young-roots-task 20370225304 20370349431 ]
+[20.373s][debug][gc,task,time   ] GC(9) 	[ scavenge-roots-task 20370350960 20370353429 ]
+[20.373s][debug][gc,task,time   ] GC(9) 	[ scavenge-roots-task 20370354252 20370355700 ]
+[20.373s][debug][gc,task,time   ] GC(9) 	[ thread-roots-task 20370356320 20370368123 ]
+[20.373s][debug][gc,task,time   ] GC(9) 	[ thread-roots-task 20370368436 20370374408 ]
+[20.373s][debug][gc,task,time   ] GC(9) 	[ thread-roots-task 20370374814 20370376058 ]
+[20.373s][debug][gc,task,time   ] GC(9) 	[ thread-roots-task 20370376408 20370377049 ]
+[20.373s][debug][gc,task,time   ] GC(9) 	[ thread-roots-task 20370377337 20370385632 ]
+[20.373s][debug][gc,task,time   ] GC(9) 	[ thread-roots-task 20370386194 20370412054 ]
+[20.373s][debug][gc,task,time   ] GC(9) 	[ scavenge-roots-task 20370412721 20370414490 ]
+[20.373s][debug][gc,task,time   ] GC(9) 	[ scavenge-roots-task 20370414790 20370513826 ]
+[20.373s][debug][gc,task,time   ] GC(9) 	[ steal-task 20370514367 20371245075 ]
+[20.373s][debug][gc,task,time   ] GC(9) GC-Thread 3 entries: 10
+[20.373s][debug][gc,task,time   ] GC(9) 	[ old-to-young-roots-task 20370278231 20370371377 ]
+[20.373s][debug][gc,task,time   ] GC(9) 	[ thread-roots-task 20370372462 20370374589 ]
+[20.373s][debug][gc,task,time   ] GC(9) 	[ thread-roots-task 20370375127 20370376118 ]
+[20.373s][debug][gc,task,time   ] GC(9) 	[ thread-roots-task 20370376668 20370377801 ]
+[20.373s][debug][gc,task,time   ] GC(9) 	[ thread-roots-task 20370378165 20370395577 ]
+[20.373s][debug][gc,task,time   ] GC(9) 	[ thread-roots-task 20370396009 20370410156 ]
+[20.373s][debug][gc,task,time   ] GC(9) 	[ scavenge-roots-task 20370411099 20370420063 ]
+[20.373s][debug][gc,task,time   ] GC(9) 	[ scavenge-roots-task 20370420413 20370421025 ]
+[20.373s][debug][gc,task,time   ] GC(9) 	[ steal-task 20370421938 20371244328 ]
+[20.373s][debug][gc,task,time   ] GC(9) 	[ waitfor-barrier-task 20371244830 20371296000 ]
+[24.482s][debug][gc,heap        ] GC(10) Heap before GC invocations=11 (full 0): PSYoungGen      total 440832K, used 426016K [0x00000007d5580000, 0x00000007f1480000, 0x0000000800000000)
+[24.483s][debug][gc,heap        ] GC(10)   eden space 425472K, 100% used [0x00000007d5580000,0x00000007ef500000,0x00000007ef500000)
+[24.483s][debug][gc,heap        ] GC(10)   from space 15360K, 3% used [0x00000007f0480000,0x00000007f0508010,0x00000007f1380000)
+[24.483s][debug][gc,heap        ] GC(10)   to   space 15872K, 0% used [0x00000007ef500000,0x00000007ef500000,0x00000007f0480000)
+[24.483s][debug][gc,heap        ] GC(10)  ParOldGen       total 87552K, used 24918K [0x0000000780000000, 0x0000000785580000, 0x00000007d5580000)
+[24.483s][debug][gc,heap        ] GC(10)   object space 87552K, 28% used [0x0000000780000000,0x0000000781855ad0,0x0000000785580000)
+[24.483s][debug][gc,heap        ] GC(10)  Metaspace       used 13192K, capacity 13598K, committed 13824K, reserved 1060864K
+[24.483s][debug][gc,heap        ] GC(10)   class space    used 1353K, capacity 1515K, committed 1536K, reserved 1048576K
+[24.483s][debug][gc,tlab        ] GC(10) TLAB totals: thrds: 5  refills: 55 max: 50 slow allocs: 7 max 7 waste:  0.3% gc: 1336448B max: 505064B slow: 99144B max: 98064B fast: 0B max: 0B
+[24.483s][info ][gc,start       ] GC(10) Pause Young (Allocation Failure)
+[24.483s][debug][gc,phases,start] GC(10) Scavenge
+[24.509s][debug][gc,phases      ] GC(10) Scavenge 25.928ms
+[24.509s][debug][gc,phases,start] GC(10) Reference Processing
+[24.509s][debug][gc,ref         ] GC(10) Skipped phase1 of Reference Processing due to unavailable references
+[24.509s][debug][gc,ref         ] GC(10) Skipped phase2 of Reference Processing due to unavailable references
+[24.509s][debug][gc,ref         ] GC(10) Skipped phase3 of Reference Processing due to unavailable references
+[24.509s][debug][gc,ref         ] GC(10) Skipped phase4 of Reference Processing due to unavailable references
+[24.509s][debug][gc,phases,ref  ] GC(10) Reference Processing: 0.1ms
+[24.509s][debug][gc,phases,ref  ] GC(10)   Reconsider SoftReferences: 0.0ms
+[24.509s][debug][gc,phases,ref  ] GC(10)     SoftRef: skipped
+[24.509s][debug][gc,phases,ref  ] GC(10)   Notify Soft/WeakReferences: 0.1ms
+[24.509s][debug][gc,phases,ref  ] GC(10)     SoftRef: skipped
+[24.509s][debug][gc,phases,ref  ] GC(10)     WeakRef: skipped
+[24.509s][debug][gc,phases,ref  ] GC(10)     FinalRef: skipped
+[24.509s][debug][gc,phases,ref  ] GC(10)     Total: skipped
+[24.509s][debug][gc,phases,ref  ] GC(10)   Notify and keep alive finalizable: 0.0ms
+[24.509s][debug][gc,phases,ref  ] GC(10)     FinalRef: skipped
+[24.509s][debug][gc,phases,ref  ] GC(10)   Notify PhantomReferences: 0.0ms
+[24.509s][debug][gc,phases,ref  ] GC(10)     PhantomRef: skipped
+[24.509s][debug][gc,phases,ref  ] GC(10)   SoftReference:
+[24.509s][debug][gc,phases,ref  ] GC(10)     Discovered: 0
+[24.509s][debug][gc,phases,ref  ] GC(10)     Cleared: 0
+[24.509s][debug][gc,phases,ref  ] GC(10)   WeakReference:
+[24.509s][debug][gc,phases,ref  ] GC(10)     Discovered: 0
+[24.509s][debug][gc,phases,ref  ] GC(10)     Cleared: 0
+[24.509s][debug][gc,phases,ref  ] GC(10)   FinalReference:
+[24.509s][debug][gc,phases,ref  ] GC(10)     Discovered: 0
+[24.509s][debug][gc,phases,ref  ] GC(10)     Cleared: 0
+[24.509s][debug][gc,phases,ref  ] GC(10)   PhantomReference:
+[24.509s][debug][gc,phases,ref  ] GC(10)     Discovered: 0
+[24.509s][debug][gc,phases,ref  ] GC(10)     Cleared: 0
+[24.509s][debug][gc,phases      ] GC(10) Reference Processing 0.703ms
+[24.510s][debug][gc,phases,start] GC(10) Weak Processing
+[24.510s][debug][gc,phases      ] GC(10) Weak Processing 0.069ms
+[24.510s][debug][gc,phases,start] GC(10) Scrub String Table
+[24.510s][debug][gc,phases      ] GC(10) Scrub String Table 0.096ms
+[24.510s][debug][gc,ergo        ] GC(10) AdaptiveSizeStart:  collection: 11 
+[24.510s][debug][gc,ergo        ] GC(10) avg_survived_padded_avg: 15861448.000000
+[24.510s][debug][gc,ergo        ] GC(10) avg_promoted_padded_avg: 8849252.000000  avg_pretenured_padded_avg: 0.000000  tenuring_thresh: 1  target_size: 16252928
+[24.510s][debug][gc,age         ] GC(10) Desired survivor size 16252928 bytes, new threshold 1 (max threshold 15)
+[24.510s][debug][gc,ergo        ] GC(10) PSAdaptiveSizePolicy::compute_eden_space_size limits: desired_eden_size: 697303040 old_eden_size: 436207616 eden_limit: 683671552 cur_eden: 435683328 max_eden_size: 683671552 avg_young_live: 5804368
+[24.510s][debug][gc,ergo        ] GC(10) PSAdaptiveSizePolicy::compute_eden_space_size: costs minor_time: 0.013546 major_cost: 0.000000 mutator_cost: 0.986454 throughput_goal: 0.990000
+[24.510s][debug][gc,ergo        ] GC(10) Live_space: 274239840 free_space: 470286336
+[24.510s][debug][gc,ergo        ] GC(10) Old eden_size: 436207616 desired_eden_size: 683671552
+[24.511s][debug][gc,ergo        ] GC(10) AdaptiveSizeStop: collection: 11 
+[24.511s][info ][gc,heap        ] GC(10) PSYoungGen: 426016K->8992K(441344K)
+[24.511s][info ][gc,heap        ] GC(10) ParOldGen: 24918K->24942K(87552K)
+[24.511s][info ][gc,metaspace   ] GC(10) Metaspace: 13192K->13192K(1060864K)
+[24.511s][info ][gc             ] GC(10) Pause Young (Allocation Failure) 440M->33M(516M) 28.057ms
+[24.511s][info ][gc,cpu         ] GC(10) User=0.02s Sys=0.01s Real=0.03s
+[24.511s][debug][gc,heap        ] GC(10) Heap after GC invocations=11 (full 0): PSYoungGen      total 441344K, used 8992K [0x00000007d5580000, 0x0000000800000000, 0x0000000800000000)
+[24.511s][debug][gc,heap        ] GC(10)   eden space 425472K, 0% used [0x00000007d5580000,0x00000007d5580000,0x00000007ef500000)
+[24.511s][debug][gc,heap        ] GC(10)   from space 15872K, 56% used [0x00000007ef500000,0x00000007efdc8010,0x00000007f0480000)
+[24.511s][debug][gc,heap        ] GC(10)   to   space 15872K, 0% used [0x00000007ff080000,0x00000007ff080000,0x0000000800000000)
+[24.511s][debug][gc,heap        ] GC(10)  ParOldGen       total 87552K, used 24942K [0x0000000780000000, 0x0000000785580000, 0x00000007d5580000)
+[24.511s][debug][gc,heap        ] GC(10)   object space 87552K, 28% used [0x0000000780000000,0x000000078185bad0,0x0000000785580000)
+[24.511s][debug][gc,heap        ] GC(10)  Metaspace       used 13192K, capacity 13598K, committed 13824K, reserved 1060864K
+[24.511s][debug][gc,heap        ] GC(10)   class space    used 1353K, capacity 1515K, committed 1536K, reserved 1048576K
+[24.511s][debug][gc,task,time   ] GC(10) VM-Thread 24482481781 24508767717 24511118085
+[24.511s][debug][gc,task,time   ] GC(10) GC-Thread 0 entries: 2
+[24.511s][debug][gc,task,time   ] GC(10) 	[ old-to-young-roots-task 24482835764 24487075031 ]
+[24.511s][debug][gc,task,time   ] GC(10) 	[ steal-task 24487075837 24498746923 ]
+[24.511s][debug][gc,task,time   ] GC(10) GC-Thread 1 entries: 18
+[24.511s][debug][gc,task,time   ] GC(10) 	[ old-to-young-roots-task 24482820477 24486553883 ]
+[24.511s][debug][gc,task,time   ] GC(10) 	[ thread-roots-task 24486554806 24486573963 ]
+[24.512s][debug][gc,task,time   ] GC(10) 	[ thread-roots-task 24486574140 24486577429 ]
+[24.512s][debug][gc,task,time   ] GC(10) 	[ thread-roots-task 24486577516 24486577953 ]
+[24.512s][debug][gc,task,time   ] GC(10) 	[ thread-roots-task 24486578078 24486590578 ]
+[24.512s][debug][gc,task,time   ] GC(10) 	[ thread-roots-task 24486590811 24486591136 ]
+[24.512s][debug][gc,task,time   ] GC(10) 	[ thread-roots-task 24486591234 24486598904 ]
+[24.512s][debug][gc,task,time   ] GC(10) 	[ thread-roots-task 24486598991 24486607384 ]
+[24.512s][debug][gc,task,time   ] GC(10) 	[ thread-roots-task 24486607496 24486609913 ]
+[24.512s][debug][gc,task,time   ] GC(10) 	[ thread-roots-task 24486610014 24486610896 ]
+[24.512s][debug][gc,task,time   ] GC(10) 	[ scavenge-roots-task 24486611026 24486611348 ]
+[24.512s][debug][gc,task,time   ] GC(10) 	[ scavenge-roots-task 24486611439 24486612942 ]
+[24.512s][debug][gc,task,time   ] GC(10) 	[ scavenge-roots-task 24486613048 24486617713 ]
+[24.512s][debug][gc,task,time   ] GC(10) 	[ scavenge-roots-task 24486617810 24486619562 ]
+[24.512s][debug][gc,task,time   ] GC(10) 	[ scavenge-roots-task 24486619653 24486677972 ]
+[24.512s][debug][gc,task,time   ] GC(10) 	[ scavenge-roots-task 24486678236 24486678613 ]
+[24.512s][debug][gc,task,time   ] GC(10) 	[ steal-task 24486678699 24498585899 ]
+[24.512s][debug][gc,task,time   ] GC(10) 	[ waitfor-barrier-task 24498586920 24508706969 ]
+[24.512s][debug][gc,task,time   ] GC(10) GC-Thread 2 entries: 13
+[24.512s][debug][gc,task,time   ] GC(10) 	[ old-to-young-roots-task 24482827948 24486537096 ]
+[24.512s][debug][gc,task,time   ] GC(10) 	[ scavenge-roots-task 24486539238 24486540540 ]
+[24.512s][debug][gc,task,time   ] GC(10) 	[ scavenge-roots-task 24486540677 24486541564 ]
+[24.512s][debug][gc,task,time   ] GC(10) 	[ thread-roots-task 24486541679 24486575178 ]
+[24.512s][debug][gc,task,time   ] GC(10) 	[ thread-roots-task 24486575293 24486575738 ]
+[24.512s][debug][gc,task,time   ] GC(10) 	[ thread-roots-task 24486575864 24486577122 ]
+[24.512s][debug][gc,task,time   ] GC(10) 	[ thread-roots-task 24486577226 24486577786 ]
+[24.512s][debug][gc,task,time   ] GC(10) 	[ thread-roots-task 24486577873 24486578743 ]
+[24.512s][debug][gc,task,time   ] GC(10) 	[ thread-roots-task 24486578837 24486596670 ]
+[24.512s][debug][gc,task,time   ] GC(10) 	[ thread-roots-task 24486596899 24486609521 ]
+[24.512s][debug][gc,task,time   ] GC(10) 	[ thread-roots-task 24486609640 24486614002 ]
+[24.512s][debug][gc,task,time   ] GC(10) 	[ scavenge-roots-task 24486614182 24486764557 ]
+[24.512s][debug][gc,task,time   ] GC(10) 	[ steal-task 24486764757 24498598377 ]
+[24.512s][debug][gc,task,time   ] GC(10) GC-Thread 3 entries: 3
+[24.512s][debug][gc,task,time   ] GC(10) 	[ noop task 24482787475 24482787941 ]
+[24.512s][debug][gc,task,time   ] GC(10) 	[ old-to-young-roots-task 24482839123 24487423844 ]
+[24.512s][debug][gc,task,time   ] GC(10) 	[ steal-task 24487424304 24508665644 ]
+[28.591s][debug][gc,heap        ] GC(11) Heap before GC invocations=12 (full 0): PSYoungGen      total 441344K, used 434464K [0x00000007d5580000, 0x0000000800000000, 0x0000000800000000)
+[28.591s][debug][gc,heap        ] GC(11)   eden space 425472K, 100% used [0x00000007d5580000,0x00000007ef500000,0x00000007ef500000)
+[28.591s][debug][gc,heap        ] GC(11)   from space 15872K, 56% used [0x00000007ef500000,0x00000007efdc8010,0x00000007f0480000)
+[28.591s][debug][gc,heap        ] GC(11)   to   space 15872K, 0% used [0x00000007ff080000,0x00000007ff080000,0x0000000800000000)
+[28.591s][debug][gc,heap        ] GC(11)  ParOldGen       total 87552K, used 24942K [0x0000000780000000, 0x0000000785580000, 0x00000007d5580000)
+[28.591s][debug][gc,heap        ] GC(11)   object space 87552K, 28% used [0x0000000780000000,0x000000078185bad0,0x0000000785580000)
+[28.591s][debug][gc,heap        ] GC(11)  Metaspace       used 13208K, capacity 13662K, committed 13824K, reserved 1060864K
+[28.591s][debug][gc,heap        ] GC(11)   class space    used 1353K, capacity 1515K, committed 1536K, reserved 1048576K
+[28.591s][debug][gc,tlab        ] GC(11) TLAB totals: thrds: 5  refills: 55 max: 50 slow allocs: 7 max 7 waste:  0.2% gc: 751192B max: 328336B slow: 186696B max: 186120B fast: 0B max: 0B
+[28.591s][info ][gc,start       ] GC(11) Pause Young (Allocation Failure)
+[28.591s][debug][gc,phases,start] GC(11) Scavenge
+[28.603s][debug][gc,phases      ] GC(11) Scavenge 11.461ms
+[28.603s][debug][gc,phases,start] GC(11) Reference Processing
+[28.603s][debug][gc,ref         ] GC(11) Skipped phase1 of Reference Processing due to unavailable references
+[28.603s][debug][gc,ref         ] GC(11) Skipped phase2 of Reference Processing due to unavailable references
+[28.603s][debug][gc,ref         ] GC(11) Skipped phase3 of Reference Processing due to unavailable references
+[28.603s][debug][gc,ref         ] GC(11) Skipped phase4 of Reference Processing due to unavailable references
+[28.603s][debug][gc,phases,ref  ] GC(11) Reference Processing: 0.1ms
+[28.603s][debug][gc,phases,ref  ] GC(11)   Reconsider SoftReferences: 0.0ms
+[28.603s][debug][gc,phases,ref  ] GC(11)     SoftRef: skipped
+[28.603s][debug][gc,phases,ref  ] GC(11)   Notify Soft/WeakReferences: 0.0ms
+[28.603s][debug][gc,phases,ref  ] GC(11)     SoftRef: skipped
+[28.603s][debug][gc,phases,ref  ] GC(11)     WeakRef: skipped
+[28.603s][debug][gc,phases,ref  ] GC(11)     FinalRef: skipped
+[28.603s][debug][gc,phases,ref  ] GC(11)     Total: skipped
+[28.603s][debug][gc,phases,ref  ] GC(11)   Notify and keep alive finalizable: 0.0ms
+[28.603s][debug][gc,phases,ref  ] GC(11)     FinalRef: skipped
+[28.603s][debug][gc,phases,ref  ] GC(11)   Notify PhantomReferences: 0.0ms
+[28.603s][debug][gc,phases,ref  ] GC(11)     PhantomRef: skipped
+[28.603s][debug][gc,phases,ref  ] GC(11)   SoftReference:
+[28.603s][debug][gc,phases,ref  ] GC(11)     Discovered: 0
+[28.603s][debug][gc,phases,ref  ] GC(11)     Cleared: 0
+[28.603s][debug][gc,phases,ref  ] GC(11)   WeakReference:
+[28.603s][debug][gc,phases,ref  ] GC(11)     Discovered: 0
+[28.603s][debug][gc,phases,ref  ] GC(11)     Cleared: 0
+[28.603s][debug][gc,phases,ref  ] GC(11)   FinalReference:
+[28.603s][debug][gc,phases,ref  ] GC(11)     Discovered: 0
+[28.603s][debug][gc,phases,ref  ] GC(11)     Cleared: 0
+[28.603s][debug][gc,phases,ref  ] GC(11)   PhantomReference:
+[28.603s][debug][gc,phases,ref  ] GC(11)     Discovered: 0
+[28.603s][debug][gc,phases,ref  ] GC(11)     Cleared: 0
+[28.603s][debug][gc,phases      ] GC(11) Reference Processing 0.418ms
+[28.603s][debug][gc,phases,start] GC(11) Weak Processing
+[28.603s][debug][gc,phases      ] GC(11) Weak Processing 0.027ms
+[28.603s][debug][gc,phases,start] GC(11) Scrub String Table
+[28.603s][debug][gc,phases      ] GC(11) Scrub String Table 0.092ms
+[28.603s][debug][gc,ergo        ] GC(11) AdaptiveSizeStart:  collection: 12 
+[28.603s][debug][gc,ergo        ] GC(11) avg_survived_padded_avg: 15311545.000000
+[28.603s][debug][gc,ergo        ] GC(11) avg_promoted_padded_avg: 8587062.000000  avg_pretenured_padded_avg: 0.000000  tenuring_thresh: 1  target_size: 15728640
+[28.603s][debug][gc,age         ] GC(11) Desired survivor size 15728640 bytes, new threshold 1 (max threshold 15)
+[28.603s][debug][gc,ergo        ] GC(11) PSAdaptiveSizePolicy::compute_eden_space_size limits: desired_eden_size: 697303040 old_eden_size: 683671552 eden_limit: 683147264 cur_eden: 435683328 max_eden_size: 683147264 avg_young_live: 5866186
+[28.603s][debug][gc,ergo        ] GC(11) PSAdaptiveSizePolicy::compute_eden_space_size: costs minor_time: 0.010902 major_cost: 0.000000 mutator_cost: 0.989098 throughput_goal: 0.990000
+[28.603s][debug][gc,ergo        ] GC(11) Live_space: 274301632 free_space: 717750272
+[28.603s][debug][gc,ergo        ] GC(11) Old eden_size: 683671552 desired_eden_size: 683147264
+[28.603s][debug][gc,ergo        ] GC(11) AdaptiveSizeStop: collection: 12 
+[28.604s][info ][gc,heap        ] GC(11) PSYoungGen: 434464K->6272K(681984K)
+[28.604s][info ][gc,heap        ] GC(11) ParOldGen: 24942K->24974K(87552K)
+[28.604s][info ][gc,metaspace   ] GC(11) Metaspace: 13208K->13208K(1060864K)
+[28.604s][info ][gc             ] GC(11) Pause Young (Allocation Failure) 448M->30M(751M) 12.389ms
+[28.604s][info ][gc,cpu         ] GC(11) User=0.03s Sys=0.01s Real=0.01s
+[28.604s][debug][gc,heap        ] GC(11) Heap after GC invocations=12 (full 0): PSYoungGen      total 681984K, used 6272K [0x00000007d5580000, 0x00000007fff00000, 0x0000000800000000)
+[28.604s][debug][gc,heap        ] GC(11)   eden space 667136K, 0% used [0x00000007d5580000,0x00000007d5580000,0x00000007fe100000)
+[28.604s][debug][gc,heap        ] GC(11)   from space 14848K, 42% used [0x00000007ff080000,0x00000007ff6a0010,0x00000007fff00000)
+[28.604s][debug][gc,heap        ] GC(11)   to   space 15360K, 0% used [0x00000007fe100000,0x00000007fe100000,0x00000007ff000000)
+[28.604s][debug][gc,heap        ] GC(11)  ParOldGen       total 87552K, used 24974K [0x0000000780000000, 0x0000000785580000, 0x00000007d5580000)
+[28.604s][debug][gc,heap        ] GC(11)   object space 87552K, 28% used [0x0000000780000000,0x0000000781863ad0,0x0000000785580000)
+[28.604s][debug][gc,heap        ] GC(11)  Metaspace       used 13208K, capacity 13662K, committed 13824K, reserved 1060864K
+[28.604s][debug][gc,heap        ] GC(11)   class space    used 1353K, capacity 1515K, committed 1536K, reserved 1048576K
+[28.604s][debug][gc,task,time   ] GC(11) VM-Thread 28590921277 28602774086 28603768429
+[28.604s][debug][gc,task,time   ] GC(11) GC-Thread 0 entries: 2
+[28.604s][debug][gc,task,time   ] GC(11) 	[ old-to-young-roots-task 28591259742 28591980696 ]
+[28.604s][debug][gc,task,time   ] GC(11) 	[ steal-task 28591981996 28602618941 ]
+[28.604s][debug][gc,task,time   ] GC(11) GC-Thread 1 entries: 4
+[28.604s][debug][gc,task,time   ] GC(11) 	[ noop task 28591249847 28591250499 ]
+[28.604s][debug][gc,task,time   ] GC(11) 	[ old-to-young-roots-task 28591253956 28593563624 ]
+[28.604s][debug][gc,task,time   ] GC(11) 	[ steal-task 28593564364 28602601043 ]
+[28.604s][debug][gc,task,time   ] GC(11) 	[ waitfor-barrier-task 28602602514 28602666043 ]
+[28.604s][debug][gc,task,time   ] GC(11) GC-Thread 2 entries: 12
+[28.604s][debug][gc,task,time   ] GC(11) 	[ old-to-young-roots-task 28591271035 28591359683 ]
+[28.604s][debug][gc,task,time   ] GC(11) 	[ thread-roots-task 28591360665 28591371284 ]
+[28.604s][debug][gc,task,time   ] GC(11) 	[ thread-roots-task 28591371584 28591376744 ]
+[28.604s][debug][gc,task,time   ] GC(11) 	[ thread-roots-task 28591376909 28591377406 ]
+[28.604s][debug][gc,task,time   ] GC(11) 	[ thread-roots-task 28591377571 28591378632 ]
+[28.604s][debug][gc,task,time   ] GC(11) 	[ thread-roots-task 28591378821 28591379703 ]
+[28.604s][debug][gc,task,time   ] GC(11) 	[ thread-roots-task 28591380090 28591381147 ]
+[28.604s][debug][gc,task,time   ] GC(11) 	[ thread-roots-task 28591381597 28591394294 ]
+[28.604s][debug][gc,task,time   ] GC(11) 	[ thread-roots-task 28591394731 28591415196 ]
+[28.604s][debug][gc,task,time   ] GC(11) 	[ thread-roots-task 28591415817 28591425358 ]
+[28.604s][debug][gc,task,time   ] GC(11) 	[ scavenge-roots-task 28591425989 28591524821 ]
+[28.604s][debug][gc,task,time   ] GC(11) 	[ steal-task 28591525051 28602622133 ]
+[28.604s][debug][gc,task,time   ] GC(11) GC-Thread 3 entries: 19
+[28.604s][debug][gc,task,time   ] GC(11) 	[ noop task 28591231993 28591232788 ]
+[28.604s][debug][gc,task,time   ] GC(11) 	[ old-to-young-roots-task 28591279821 28591339848 ]
+[28.604s][debug][gc,task,time   ] GC(11) 	[ scavenge-roots-task 28591340237 28591342036 ]
+[28.604s][debug][gc,task,time   ] GC(11) 	[ scavenge-roots-task 28591342224 28591343329 ]
+[28.604s][debug][gc,task,time   ] GC(11) 	[ thread-roots-task 28591343561 28591379112 ]
+[28.604s][debug][gc,task,time   ] GC(11) 	[ thread-roots-task 28591379475 28591380559 ]
+[28.604s][debug][gc,task,time   ] GC(11) 	[ thread-roots-task 28591380953 28591390843 ]
+[28.604s][debug][gc,task,time   ] GC(11) 	[ thread-roots-task 28591391255 28591391803 ]
+[28.604s][debug][gc,task,time   ] GC(11) 	[ thread-roots-task 28591391984 28591401247 ]
+[28.604s][debug][gc,task,time   ] GC(11) 	[ thread-roots-task 28591401630 28591411915 ]
+[28.604s][debug][gc,task,time   ] GC(11) 	[ thread-roots-task 28591412097 28591415345 ]
+[28.604s][debug][gc,task,time   ] GC(11) 	[ thread-roots-task 28591416163 28591417055 ]
+[28.604s][debug][gc,task,time   ] GC(11) 	[ scavenge-roots-task 28591417259 28591417724 ]
+[28.604s][debug][gc,task,time   ] GC(11) 	[ scavenge-roots-task 28591417982 28591419420 ]
+[28.604s][debug][gc,task,time   ] GC(11) 	[ scavenge-roots-task 28591419621 28591426117 ]
+[28.604s][debug][gc,task,time   ] GC(11) 	[ scavenge-roots-task 28591426511 28591427964 ]
+[28.604s][debug][gc,task,time   ] GC(11) 	[ scavenge-roots-task 28591428211 28591450304 ]
+[28.604s][debug][gc,task,time   ] GC(11) 	[ scavenge-roots-task 28591450499 28591450985 ]
+[28.604s][debug][gc,task,time   ] GC(11) 	[ steal-task 28591451158 28602630791 ]
+[32.275s][info ][gc,heap,exit   ] Heap
+[32.275s][info ][gc,heap,exit   ]  PSYoungGen      total 681984K, used 419469K [0x00000007d5580000, 0x00000007fff00000, 0x0000000800000000)
+[32.275s][info ][gc,heap,exit   ]   eden space 667136K, 61% used [0x00000007d5580000,0x00000007ee903438,0x00000007fe100000)
+[32.275s][info ][gc,heap,exit   ]   from space 14848K, 42% used [0x00000007ff080000,0x00000007ff6a0010,0x00000007fff00000)
+[32.275s][info ][gc,heap,exit   ]   to   space 15360K, 0% used [0x00000007fe100000,0x00000007fe100000,0x00000007ff000000)
+[32.275s][info ][gc,heap,exit   ]  ParOldGen       total 87552K, used 24974K [0x0000000780000000, 0x0000000785580000, 0x00000007d5580000)
+[32.275s][info ][gc,heap,exit   ]   object space 87552K, 28% used [0x0000000780000000,0x0000000781863ad0,0x0000000785580000)
+[32.275s][info ][gc,heap,exit   ]  Metaspace       used 13239K, capacity 13662K, committed 13824K, reserved 1060864K
+[32.275s][info ][gc,heap,exit   ]   class space    used 1354K, capacity 1515K, committed 1536K, reserved 1048576K
+[32.275s][debug][gc,ergo        ] UseAdaptiveSizePolicy actions to meet  *** throughput goal ***
+[32.275s][debug][gc,ergo        ]                        GC overhead (%)
+[32.275s][debug][gc,ergo        ]     Young generation:        1.09	  (attempted to grow)
+[32.275s][debug][gc,ergo        ]     Tenured generation:      0.00	  (no change)
+[32.275s][debug][gc,ergo        ] Tenuring threshold: (attempted to decrease to balance GC costs) = 1
+[32.275s][debug][gc,heap,exit   ] Accumulated young generation GC time 0.1997232 secs
+[32.275s][debug][gc,heap,exit   ] Accumulated old generation GC time 0.0000000 secs
