@@ -5,6 +5,8 @@ import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
+import java.util.Queue;
+
 @SwingContainer
 @Retention(RetentionPolicy.RUNTIME)
 @Target(ElementType.METHOD)
@@ -27,6 +29,7 @@ public @interface Cache {
 
     /**
      * Указывает, какие аргументы метода учитывать при определении уникальности результата
+     * @return
      */
     Class<?>[] identityBy() default {};
 

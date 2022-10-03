@@ -6,7 +6,7 @@ import java.util.List;
 
 public class SerializationUtil {
 
-    public static void serialize(Result result, File file) throws IOException {
+    public synchronized static void serialize(Result result, File file) throws IOException {
 
         if (file.exists()) {
             ObjectOutputStream oos = new AppendingObjectOutputStream(new FileOutputStream(file, true));
@@ -18,7 +18,7 @@ public class SerializationUtil {
         }
     }
 
-    public static <T> List<T> deserialize(File file) throws IOException, ClassNotFoundException {
+    public synchronized static <T> List<T> deserialize(File file) throws IOException, ClassNotFoundException {
         List<T> listOfResults = new ArrayList<>();
         ObjectInputStream ois = new ObjectInputStream(new FileInputStream(file));
 

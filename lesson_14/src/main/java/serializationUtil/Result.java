@@ -1,7 +1,10 @@
 package serializationUtil;
 
+import proxy.ReadWriteList;
+
 import java.io.Serializable;
 import java.util.List;
+import java.util.Queue;
 
 public class Result implements Serializable {
 

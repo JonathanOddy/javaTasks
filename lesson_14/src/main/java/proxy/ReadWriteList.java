@@ -1,34 +1,34 @@
 package proxy;
 
-import java.util.Map;
+import java.util.List;
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReadWriteLock;
 import java.util.concurrent.locks.ReentrantReadWriteLock;
 
-public class ReadWriteMap<K,V> {
+public class ReadWriteList<V> {
 
-    private final Map<K,V> map;
+    private final List<V> list;
     private final ReadWriteLock lock = new ReentrantReadWriteLock();
     private final Lock readLock = lock.readLock();
     private final Lock writeLock = lock.writeLock();
 
-    public ReadWriteMap(Map<K, V> map) {
-        this.map = map;
+    public ReadWriteList(List<V> list) {
+        this.list = list;
     }
 
-    public void put(K key, V value) {
+    public void add(V value) {
         writeLock.lock();
         try {
-            map.put(key,value);
+            list.add(value);
         } finally {
             writeLock.unlock();
         }
     }
 
-    public V get(K key) {
+    public List<V> getList() {
         readLock.lock();
         try {
-            return map.get(key);
+            return list;
         } finally {
             readLock.unlock();
         }

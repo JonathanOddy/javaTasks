@@ -10,7 +10,7 @@ import java.util.zip.ZipOutputStream;
 
 public class ZipUtil {
 
-    public static void zip(File file, File destinationZipFile) throws IOException {
+    public synchronized static void zip(File file, File destinationZipFile) throws IOException {
         FileInputStream fis = new FileInputStream(file);
         byte[] buffer = new byte[fis.available()];
         fis.read(buffer);
@@ -20,7 +20,7 @@ public class ZipUtil {
         zos.close();
     }
 
-    public static void unZip(File zipFile, File destinationFile) throws IOException {
+    public synchronized static void unZip(File zipFile, File destinationFile) throws IOException {
         ZipInputStream zis = new ZipInputStream(new FileInputStream(zipFile));
         FileOutputStream fos = new FileOutputStream(destinationFile);
         ZipEntry zipEntry = zis.getNextEntry();

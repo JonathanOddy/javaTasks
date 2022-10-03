@@ -1,9 +1,11 @@
 import proxy.CacheProxy;
 import service.Service;
 import service.ServiceImpl;
-
 import java.lang.reflect.Proxy;
 import java.time.LocalDate;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+import java.util.stream.IntStream;
 
 public class Main {
 
@@ -18,17 +20,17 @@ public class Main {
         String[] affairs = {"coding", "reading", "cooking"};
         double[] hours = {1, 2};
 
-        work(serviceProxy, affairs, hours);
-        work(serviceProxy, affairs, hours);
+        IntStream.range(0,5).forEach(i -> work(serviceProxy, affairs, hours));
     }
 
     private static void work(Service serviceProxy, String[] affairs, double[] hours) {
+        ExecutorService executorService = Executors.newFixedThreadPool(4);
         for (String affair : affairs) {
-            serviceProxy.work(affair);
+            executorService.execute(() -> serviceProxy.work(affair));
             for (double hour : hours) {
-                serviceProxy.run(affair, hour, LocalDate.now());
+                executorService.execute(() -> serviceProxy.run(affair, hour, LocalDate.now()));
             }
         }
-        System.out.println();
+        executorService.shutdown();
     }
 }
